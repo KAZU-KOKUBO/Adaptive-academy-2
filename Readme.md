@@ -1,11 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Igor Fendrikh](https://up.htmlacademy.ru/adaptive/23/user/1552321).
-<<<<<<< HEAD
 * Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
-=======
-* Наставник: `Павел Позняк`.
->>>>>>> 7892b9d0215b77282e6e2fa8d45b9dc031da9322
 
 ---
 
