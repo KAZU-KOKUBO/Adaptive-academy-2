@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Igor Fendrikh](https://up.htmlacademy.ru/adaptive/23/user/1552321).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
 
 ---
 
