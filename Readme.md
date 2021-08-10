@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Igor Fendrikh](https://up.htmlacademy.ru/adaptive/23/user/1552321).
-* Наставник: `Павел Позняк`.
+* Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
 
 ---
 
@@ -19,10 +19,6 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 ### Памятка
 
 #### 1. Зарегистрируйтесь на Гитхабе
-
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
 
 [Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1552321-pink-23) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
