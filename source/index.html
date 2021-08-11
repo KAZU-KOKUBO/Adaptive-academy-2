@@ -20,13 +20,13 @@
             <a href="#"> Главная </a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html">Фотографии</a>
+            <a href="catalog.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="contest.html">Конкурс</a>
+            <a href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Html Academy</a>
+            <a href="https://up.htmlacademy.ru/adaptive/23">Html Academy</a>
           </li>
         </ul>
       </nav>
@@ -36,16 +36,25 @@
         <h2 class="visually-hidden">Скачивание Pink</h2>
         <p class="info-header__slogan">Взгляните на жизнь иначе!</p>
       </div>
-      <div>
+      <div class="info-header__download load-block">
         <img src="img/phone.png" width="320" height="286" alt="Смартфон" />
-        <a href="https://www.apple.com/itunes/working-itunes/market/" class="info-header__download" aria-label="Скачать приложение">Скачать приложение</a>
-
-        <a href="https://www.apple.com/itunes/working-itunes/market/" class="apple-logo"></a>
-        <a href="https://androidmarkets.ru/" class="android-logo"></a>
-        <a href="https://www.microsoft.com/ru-ru/" class="microsoft-logo"></a>
-        <p class="select-os">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+        <a class="info-header__load-link" href="https://www.apple.com/itunes/working-itunes/market/"
+          aria-label="Скачать приложение">Скачать приложение</a>
+        <ul class="load-block__load-list">
+          <li class="load-block__load-item">
+            <a class="load-block__link" href="https://www.apple.com/itunes/working-itunes/market/" aria-label="Скачать на ios">
+            </a>
+          </li>
+          <li class="load-block__load-item">
+            <a class="load-block__link" href="https://androidmarkets.ru/" aria-label="Скачать на android">
+            </a>
+          </li>
+          <li class="load-block__load-item">
+            <a class="load-block__link" href="https://www.microsoft.com/ru-ru/" aria-label="Скачать на windows">
+            </a>
+          </li>
+        </ul>
+        <p class="load-block__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
   </section>
@@ -57,9 +66,7 @@
         <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="advantages__slogan-wrapper">
           <p class="advantages__slogan">Устали от серости мегаполиса?</p>
-          <p class="advantages__slogan-small">
-            Нам есть, что вам предложить
-          </p>
+          <p class="advantages__slogan-small">Нам есть, что вам предложить</p>
         </div>
 
         <ul class="advantages__list">
@@ -98,9 +105,7 @@
           <blockquote class="reviews__item">
             <div class="reviews__author">
               <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__author-info">
-                25 лет, водитель трамвая
-              </p>
+              <p class="reviews__author-info">25 лет, водитель трамвая</p>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со
@@ -119,98 +124,98 @@
     <section class="price">
       <h2 class="visually-hidden">Наши тарифы</h2>
       <div class="price__wrapper">
-          <table class="price__table">
-            <thead class="price__table-head">
-              <tr>
-                <th class="price__value price__value--empty"></th>
-                <th class="price__value">
-                  База
-                  <p>1,99 usd</p>
-                </th>
-                <th class="price__value price__value--hit">
-                  Стандарт
-                  <p>3,99 usd</p>
-                </th>
-                <th class="price__value">
-                  Анлим
-                  <p>9,99 usd</p>
-                </th>
-              </tr>
-            </thead>
-            <tbody class="price__list-body">
-              <tr>
-                <td class="price__field price__field--empty price__field--fill">
-                  Розовый фильтр
-                </td>
-                <td class="price__field price__field--ok"></td>
-                <td class="price__field price__field--ok"></td>
-                <td class="price__field price__field--ok"></td>
-              </tr>
-              <tr>
-                <td class="price__field price__field--empty price__field--fill">
-                  Смайлики
-                </td>
-                <td class="price__field price__field--cancel"></td>
-                <td class="price__field price__field--ok"></td>
-                <td class="price__field price__field--ok"></td>
-              </tr>
-              <tr>
-                <td class="price__field price__field--empty price__field--fill">
-                  Комментарии
-                </td>
-                <td class="price__field price__field--cancel"></td>
-                <td class="price__field price__field--cancel"></td>
-                <td class="price__field price__field--ok"></td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="price__toggles controls">
-            <button class="controls__button" type="button" aria-label="Первый слайд"></button>
-            <button class="controls__button controls__button--current" type="button" aria-label="Второй слайд"></button>
-            <button class="controls__button" type="button" aria-label="Третий слайд"></button>
+        <table class="price__table">
+          <thead class="price__table-head">
+            <tr>
+              <th class="price__value price__value--empty"></th>
+              <th class="price__value">
+                База
+                <p>1,99 usd</p>
+              </th>
+              <th class="price__value price__value--hit">
+                Стандарт
+                <p>3,99 usd</p>
+              </th>
+              <th class="price__value">
+                Анлим
+                <p>9,99 usd</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="price__list-body">
+            <tr>
+              <td class="price__field price__field--empty price__field--fill">
+                Розовый фильтр
+              </td>
+              <td class="price__field price__field--ok"></td>
+              <td class="price__field price__field--ok"></td>
+              <td class="price__field price__field--ok"></td>
+            </tr>
+            <tr>
+              <td class="price__field price__field--empty price__field--fill">
+                Смайлики
+              </td>
+              <td class="price__field price__field--cancel"></td>
+              <td class="price__field price__field--ok"></td>
+              <td class="price__field price__field--ok"></td>
+            </tr>
+            <tr>
+              <td class="price__field price__field--empty price__field--fill">
+                Комментарии
+              </td>
+              <td class="price__field price__field--cancel"></td>
+              <td class="price__field price__field--cancel"></td>
+              <td class="price__field price__field--ok"></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="price__toggles controls">
+          <button class="controls__button" type="button" aria-label="Первый слайд"></button>
+          <button class="controls__button controls__button--current" type="button" aria-label="Второй слайд"></button>
+          <button class="controls__button" type="button" aria-label="Третий слайд"></button>
         </div>
       </div>
     </section>
     <section class="contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-          <p class="contacts__slogan">Остались вопросы?</p>
-            <p class="contacts__slogan-small">Cвяжитесь с нами!</p>
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <p class="contacts__slogan">Остались вопросы?</p>
+      <p class="contacts__slogan-small">Cвяжитесь с нами!</p>
       <ul class="contacts__list">
         <li class="contacts__item">
           <span class="contacts__title">Звоните</span>
-            <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </li>
         <li class="contacts__item">
-            <span class="contacts__title">Пишите</span>
-            <a class="contacts__mail" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <span class="contacts__title">Пишите</span>
+          <a class="contacts__mail" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__item">
-            <span class="contacts__title">Приезжайте</span>
-            <a class="contacts__addres" href="#">ул. Большая Конюшенная, 19/8</a>
-          </li>
-        </ul>
-        <div class="contacts__map">
-            <img src="img/map.png" alt="Карта" />
-          </div>
+          <span class="contacts__title">Приезжайте</span>
+          <a class="contacts__addres" href="#">ул. Большая Конюшенная, 19/8</a>
+        </li>
+      </ul>
+      <div class="contacts__map">
+        <img src="img/map.png" alt="Карта" />
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
-      <a class="page-footer__logo-link">
-        <img src="img/logo-footer.svg" alt="Логотип приложения Pink" aria-label="Логотип приложения Pink" />
-      </a>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube"
-            href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы в Youtube</a>
-        </li>
-      </ul>
+    <a class="page-footer__logo-link">
+      <img src="img/logo-footer.svg" alt="Логотип приложения Pink" aria-label="Логотип приложения Pink" />
+    </a>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы
+          в Youtube</a>
+      </li>
+    </ul>
 
     <p class="page-footer__copyright copyright">
       <span class="copyright__text">Разработано</span>
