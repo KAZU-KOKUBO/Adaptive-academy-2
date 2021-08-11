@@ -1,193 +1,293 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Пинк</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>HTML Academy: Пинк</title>
-</head>
+  <body class="page-body">
+    <section class="intro-header">
+      <h2 class="visually-hidden">Меню</h2>
+      <header class="page-header">
+        <a
+          href="#"
+          class="page-header__logo"
+          aria-label="Логотип приложения Pink"
+        >
+          <img
+            src="img/logotype-mobile.svg"
+            width="74"
+            height="23"
+            alt="Логотип приложения Pink"
+          />
+        </a>
+        <nav class="page-header__nav main-nav">
+          <button
+            class="main-nav__toggle"
+            type="button"
+            aria-label="Открыть меню"
+          ></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html"> Главная </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://up.htmlacademy.ru/adaptive/23">Html Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="photo-header">
+        <h2 class="visually-hidden">Фотографии наших пользователей</h2>
+        <div>
+          <h2 class="photo-header__info">Фотографии пользователей</h2>
+        </div>
+      </section>
+    </section>
 
-<body class="page-body">
-  <section class="intro-header">
-    <h2 class="visually-hidden">Меню</h2>
-    <header class="page-header">
-      <a href="#" class="page-header__logo" aria-label="Логотип приложения Pink">
-        <img src="img/logotype-mobile.svg" width="74" height="23" alt="Логотип приложения Pink" />
-      </a>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html"> Главная </a>
+    <main class="main-catalog">
+      <h1 class="visually-hidden">Прросмотрите фотографии пользователей!</h1>
+      <section class="photo-block panorama">
+        <p class="panorama__title">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как
+          не хватает ваших?
+        </p>
+        <div class="panorama__wrapper">
+          <h2 class="visually-hidden">Панорамный пост</h2>
+          <p class="panorama__info">Панорама дня</p>
+          <a class="panorama__link" href="#"
+            ><img
+              class="panorama__picture"
+              src="img/panorama-mobile.png"
+              width="320"
+              height="137"
+              alt="Мост в горах для прыжков"
+              aria-label="Мост в горах для прыжков"
+            />
+          </a>
+          <div class="panorama-post">
+            <p class="panorama__author">
+              Анна<span class="panorama__note">(5 минут назад)</span>
+            </p>
+            <p class="panorama__text">
+              Прыгать или нет? Напишите в комментарии свой совет и смотрите
+              прямую трансляцию в перископе, задавайте свои вопросы!
+            </p>
+            <button class="panorama__likes">Нравится: 215</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="users-post post">
+        <h2 class="visually-hidden">Посты наших пользователей</h2>
+        <ul class="post__list">
+          <li class="post__item">
+            <a class="post__link" href="#"
+              ><img
+                class="post__picture"
+                src="img/auto-mobile.png"
+                width="280"
+                height="180"
+                alt="Съемка машины"
+                aria-label="Съемка машины"
+            /></a>
+            <p class="post__author">
+              Левон<span class="post__note">(5 часов назад)</span>
+            </p>
+            <p class="post__text">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
+            <button class="post__button">Нравится: 356</button>
           </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">Фотографии</a>
+          <li class="post__item">
+            <a class="post__link" href="#"
+              ><img
+                class="post__picture"
+                src="img/drums.png"
+                width="280"
+                height="180"
+                alt="Барабаны"
+                aria-label="Барабаны"
+            /></a>
+            <p class="post__author">
+              Антон<span class="post__note">(12 часов назад)</span>
+            </p>
+            <p class="post__text">Соседи будут рады!</p>
+            <button class="post__button">Нравится: 666</button>
           </li>
-          <li class="main-nav__item">
-            <a href="form.html">Конкурс</a>
+          <li class="post__item">
+            <a class="post__link" href="#"
+              ><img
+                class="post__picture"
+                src="img/sky-mobile.png"
+                width="280"
+                height="180"
+                alt="Небо через панорамное остекление"
+                aria-label="Небо через панорамное остекление"
+            /></a>
+            <p class="post__author">
+              Борис<span class="post__note">(20 часов назад)</span>
+            </p>
+            <p class="post__text">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
+            <button class="post__button">Нравится: 215</button>
           </li>
-          <li class="main-nav__item">
-            <a href="https://up.htmlacademy.ru/adaptive/23">Html Academy</a>
+          <li class="post__item">
+            <a class="post__link" href="#"
+              ><img
+                class="post__picture"
+                src="img/kuban-mobile.png"
+                width="280"
+                height="180"
+                alt="Кубанская ярмарка"
+                aria-label="Кубанская ярмарка"
+            /></a>
+            <p class="post__author">
+              Сергей<span class="post__note">(25 часов назад)</span>
+            </p>
+            <p class="post__text">Самая кубанская в мире!</p>
+            <button class="post__button">Нравится: 4</button>
+          </li>
+          <li class="post__item">
+            <a class="post__link" href="#"
+              ><img
+                class="post__picture"
+                src="img/max-mobile.png"
+                width="280"
+                height="180"
+                alt="Горный пейзаж"
+                aria-label="Горный пейзаж"
+            /></a>
+            <p class="post__author">
+              Максим<span class="post__note">(40 часов назад)</span>
+            </p>
+            <p class="post__text">Где снег-то?</p>
+            <button class="post__button">Нравится: 150</button>
+          </li>
+          <li class="post__item">
+            <a class="post__link" href="#"
+              ><img
+                class="post__picture"
+                src="img/plane-mobile.png"
+                width="280"
+                height="180"
+                alt="Крыло самолета через иллюминатор"
+                aria-label="Крыло самолета через иллюминатор"
+            /></a>
+            <p class="post__author">
+              Надежда<span class="post__note">(45 часов назад)</span>
+            </p>
+            <p class="post__text">Всем GM и взаимные лайки!</p>
+            <button class="post__button">Нравится: 2560</button>
           </li>
         </ul>
-      </nav>
-    </header>
-    <section class="photo-header">
-      <h2 class="visually-hidden">Фотографии наших пользователей</h2>
-      <div>
-        <h2 class="photo-header__info">Фотографии пользователей</h2>
-      </div>
-    </section>
-  </section>
+      </section>
 
-  <main class="main-catalog">
-    <h1 class="visually-hidden">Прросмотрите фотографии пользователей!</h1>
-    <section class="photo-block panorama">
-      <p class="panorama__title">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как
-        не хватает ваших?
-      </p>
-      <div class="panorama__wrapper">
-        <h2 class="visually-hidden">Панорамный пост</h2>
-        <p class="panorama__info">Панорама дня</p>
-        <a class="panorama__link" href="#"><img class="panorama__picture" src="img/panorama-mobile.png" width="320"
-            height="137" alt="Мост в горах для прыжков" aria-label="Мост в горах для прыжков" />
-        </a>
-        <div class="panorama-post">
-          <p class="panorama__author">
-            Анна<span class="panorama__note">(5 минут назад)</span>
+      <section class="catalog-upload upload">
+        <h2 class="visually-hidden">Редактор фото</h2>
+        <div class="upload__info__wrapper">
+          <p class="upload__info">Затмите их всех!</p>
+          <p class="upload__info">
+            Выкладывайте все, что накопилось в телефоне!
           </p>
-          <p class="panorama__text">
-            Прыгать или нет? Напишите в комментарии свой совет и смотрите
-            прямую трансляцию в перископе, задавайте свои вопросы!
-          </p>
-          <button class="panorama__likes">Нравится: 215</button>
         </div>
-      </div>
-    </section>
-
-    <section class="users-post post">
-      <h2 class="visually-hidden">Посты наших пользователей</h2>
-      <ul class="post__list">
-        <li class="post__item">
-          <a class="post__link" href="#"><img class="post__picture" src="img/auto-mobile.png" width="280" height="180"
-              alt="Съемка машины" aria-label="Съемка машины" /></a>
-          <p class="post__author">
-            Левон<span class="post__note">(5 часов назад)</span>
-          </p>
-          <p class="post__text">
-            Вчера он на луну летал, сегодня в руки к нам попал.
-          </p>
-          <button class="post__button">Нравится: 356</button>
-        </li>
-        <li class="post__item">
-          <a class="post__link" href="#"><img class="post__picture" src="img/drums.png" width="280" height="180"
-              alt="Барабаны" aria-label="Барабаны" /></a>
-          <p class="post__author">
-            Антон<span class="post__note">(12 часов назад)</span>
-          </p>
-          <p class="post__text">Соседи будут рады!</p>
-          <button class="post__button">Нравится: 666</button>
-        </li>
-        <li class="post__item">
-          <a class="post__link" href="#"><img class="post__picture" src="img/sky-mobile.png" width="280" height="180"
-              alt="Небо через панорамное остекление" aria-label="Небо через панорамное остекление" /></a>
-          <p class="post__author">
-            Борис<span class="post__note">(20 часов назад)</span>
-          </p>
-          <p class="post__text">
-            Здесь могла быть ваша цитата о высоком и вечном.
-          </p>
-          <button class="post__button">Нравится: 215</button>
-        </li>
-        <li class="post__item">
-          <a class="post__link" href="#"><img class="post__picture" src="img/kuban-mobile.png" width="280" height="180"
-              alt="Кубанская ярмарка" aria-label="Кубанская ярмарка" /></a>
-          <p class="post__author">
-            Сергей<span class="post__note">(25 часов назад)</span>
-          </p>
-          <p class="post__text">Самая кубанская в мире!</p>
-          <button class="post__button">Нравится: 4</button>
-        </li>
-        <li class="post__item">
-          <a class="post__link" href="#"><img class="post__picture" src="img/max-mobile.png" width="280" height="180"
-              alt="Горный пейзаж" aria-label="Горный пейзаж" /></a>
-          <p class="post__author">
-            Максим<span class="post__note">(40 часов назад)</span>
-          </p>
-          <p class="post__text">Где снег-то?</p>
-          <button class="post__button">Нравится: 150</button>
-        </li>
-        <li class="post__item">
-          <a class="post__link" href="#"><img class="post__picture" src="img/plane-mobile.png" width="280" height="180"
-              alt="Крыло самолета через иллюминатор" aria-label="Крыло самолета через иллюминатор" /></a>
-          <p class="post__author">
-            Надежда<span class="post__note">(45 часов назад)</span>
-          </p>
-          <p class="post__text">Всем GM и взаимные лайки!</p>
-          <button class="post__button">Нравится: 2560</button>
-        </li>
-      </ul>
-    </section>
-
-    <section class="catalog-upload upload">
-      <h2 class="visually-hidden">Редактор фото</h2>
-      <div class="upload__info__wrapper">
-        <p class="upload__info">Затмите их всех!</p>
-        <p class="upload__info">
-          Выкладывайте все, что накопилось в телефоне!
-        </p>
-      </div>
-      <form class="catalog-upload__form upload-form" method="GET" action="https://echo.htmlacademy.ru">
-        <fieldset class="upload__picture">
-          <legend class="visually-hidden">Картинка</legend>
-          <img class="upload__picture-img" src="img/photo7.png" width="280" height="374" alt="Зима" />
-        </fieldset>
-        <div class="upload__form-button">
-          <button class="
+        <form
+          class="catalog-upload__form upload-form"
+          method="GET"
+          action="https://echo.htmlacademy.ru"
+        >
+          <fieldset class="upload__picture">
+            <legend class="visually-hidden">Картинка</legend>
+            <img
+              class="upload__picture-img"
+              src="img/photo7.png"
+              width="280"
+              height="374"
+              alt="Зима"
+            />
+          </fieldset>
+          <div class="upload__form-button">
+            <button
+              class="
                 upload__form-button upload__form-button--download
                 button-link
-              " type="submit">
-            Запостить
-          </button>
-          <button class="
+              "
+              type="submit"
+            >
+              Запостить
+            </button>
+            <button
+              class="
                 upload__form-button upload__form-button--cancel
                 button-link
-              " type="reset">
-            Отмена
-          </button>
-        </div>
-      </form>
-    </section>
-  </main>
+              "
+              type="reset"
+            >
+              Отмена
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
 
-  <footer class="page-footer">
-    <a class="page-footer__logo-link">
-      <img src="img/logo-footer.svg" alt="Логотип приложения Pink" aria-label="Логотип приложения Pink" />
-    </a>
-    <ul class="page-footer__social social">
-      <li class="social__item">
-        <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы
-          в Youtube</a>
-      </li>
-    </ul>
-
-    <p class="page-footer__copyright copyright">
-      <span class="copyright__text">Разработано</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg width="27" height="34"
-          viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
-            fill="#D22856" />
-        </svg>
+    <footer class="page-footer">
+      <a class="page-footer__logo-link">
+        <img
+          src="img/logo-footer.svg"
+          alt="Логотип приложения Pink"
+          aria-label="Логотип приложения Pink"
+        />
       </a>
-    </p>
-  </footer>
-</body>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a
+            class="social__link social__link--twitter"
+            href="https://twitter.com/htmlacademy_ru"
+            >Мы в Твиттере</a
+          >
+        </li>
+        <li class="social__item">
+          <a
+            class="social__link social__link--facebook"
+            href="https://www.facebook.com/htmlacademy"
+            >Мы в Фейсбуке</a
+          >
+        </li>
+        <li class="social__item">
+          <a
+            class="social__link social__link--youtube"
+            href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g"
+            >Мы в Youtube</a
+          >
+        </li>
+      </ul>
 
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a
+          class="copyright__link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+          ><svg
+            width="27"
+            height="34"
+            viewBox="0 0 27 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+              fill="#D22856"
+            />
+          </svg>
+        </a>
+      </p>
+    </footer>
+  </body>
 </html>
