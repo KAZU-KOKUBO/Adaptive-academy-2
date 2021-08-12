@@ -59,10 +59,10 @@
           Выиграйте конкурс на самое безбашенное путешествие с Пинк
         </h1>
         <p class="page-form__info">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
-          миль на вашу бонусную карту!
+          <span>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
+            миль на вашу бонусную карту!</span>
+          <span>Пожалуйста, заполните форму ниже:</span>
         </p>
-        <p class="page-form__info">Пожалуйста, заполните форму ниже:</p>
         <form
           class="page-form__form"
           method="POST"
@@ -102,8 +102,7 @@
                   id="patronymic"
                   type="text"
                   name="patronymic"
-                  placeholder="Ну и отчество тоже *"
-                  required
+                  placeholder="Ну и отчество тоже"
                 />
               </li>
             </ul>
@@ -119,10 +118,11 @@
                 <ul class="achievements__list">
                   <li class="achievements__items">
                     <input
-                      class="achievements__input achievements__input--checked"
+                      class="achievements__input"
                       id="first-item"
                       type="checkbox"
-                      name="first-achievements"
+                      name="crazy achievements"
+                      value="first-achievements"
                       checked
                     />
                     <label class="achievements__label" for="first-item"
@@ -131,10 +131,11 @@
                   </li>
                   <li class="achievements__items">
                     <input
-                      class="achievements__input achievements__input--checked"
+                      class="achievements__input"
                       id="second-item"
                       type="checkbox"
-                      name="second-achievements"
+                      name="crazy achievements"
+                      value="second-achievements"
                       checked
                     />
                     <label class="achievements__label" for="second-item"
@@ -143,10 +144,11 @@
                   </li>
                   <li class="achievements__items">
                     <input
-                      class="achievements__input achievements__input--checked"
+                      class="achievements__input"
                       id="third-item"
                       type="checkbox"
-                      name="third-achievements"
+                      name="crazy achievements"
+                      value="third-achievements"
                     />
                     <label class="achievements__label" for="third-item"
                       >Видел Чака Норриса</label
@@ -154,10 +156,11 @@
                   </li>
                   <li class="achievements__items">
                     <input
-                      class="achievements__input achievements__input--checked"
+                      class="achievements__input"
                       id="fourth-item"
                       type="checkbox"
-                      name="fourth-achievements"
+                      name="crazy achievements"
+                      value="fourth-achievements"
                     />
                     <label class="achievements__label" for="fourth-item"
                       >Накупил сувениров</label
@@ -165,10 +168,11 @@
                   </li>
                   <li class="achievements__items">
                     <input
-                      class="achievements__input achievements__input--checked"
+                      class="achievements__input"
                       id="fifth-item"
                       type="checkbox"
-                      name="fifth-achievements"
+                      name="crazy achievements"
+                      value="fifth-achievements"
                       checked
                     />
                     <label class="achievements__label" for="fifth-item"
@@ -177,10 +181,11 @@
                   </li>
                   <li class="achievements__items">
                     <input
-                      class="achievements__input achievements__input--checked"
+                      class="achievements__input"
                       id="sixth-item"
                       type="checkbox"
-                      name="sixth-achievements"
+                      name="crazy achievements"
+                      value="sixth-achievements"
                     />
                     <label class="achievements__label" for="sixth-item"
                       >Разгромил отель</label
@@ -231,10 +236,10 @@
                   >Pink для iOS</label
                 >
                 <input
-                  class="app-form__input app-form__input--checked"
+                  class="app-form__input"
                   id="pink-for-ios"
                   type="radio"
-                  name="item-radio"
+                  name="travel-apps"
                   value="for-ios"
                   checked
                 />
@@ -247,26 +252,25 @@
                   class="app-form__input"
                   id="pink-for-android"
                   type="radio"
-                  name="item-radio"
+                  name="travel-apps"
                   value="for-android"
                 />
               </li>
               <li class="app-form__item">
-                <label class="app-form__label" for="pink-for-Windows"
+                <label class="app-form__label" for="pink-for-windows"
                   >Windows Phone</label
                 >
                 <input
-                  class="app-form__input app-form__input"
-                  id="pink-for-Windows"
+                  class="app-form__input"
+                  id="pink-for-windows"
                   type="radio"
-                  name="item-radio"
-                  value="for-Windows"
+                  name="travel-apps"
+                  value="for-windows"
                 />
               </li>
             </ul>
           </fieldset>
 
-          <div class="page-form__feedback__wrapper">
             <fieldset class="page-form__text description-form">
               <legend class="page-form__description">
                 Опишите свои эмоции
@@ -289,7 +293,6 @@
                 <span class="asterisk-color">*</span>— обязательные поля
               </p>
             </fieldset>
-          </div>
         </form>
       </section>
     </main>
