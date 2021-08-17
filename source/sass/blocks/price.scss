@@ -1,0 +1,27 @@
+.price {
+  background-color: $basic-wheat;
+}
+
+.price__value {
+  background-color: $darken-blue;
+  color: $basic-white;
+}
+
+.price__value--empty {
+  background-color: inherit;
+}
+
+.price__field {
+  color: $darken-blue;
+  background-color: $basic-white;
+}
+
+.price__value p {
+  font-weight: 300;
+}
+
+
+.price__toggles {
+  align-items: center;
+  text-align: center;
+}

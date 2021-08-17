@@ -1,1 +1,32 @@
-// Начните писать стили здесь
+//Global
+@import "global/normalize";
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+
+
+// blocks
+
+@import "blocks/intro-header.scss";
+@import "blocks/page-header.scss";
+@import "blocks/info-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/load-block.scss";
+@import "blocks/advantages.scss";
+@import "blocks/advantages-slogan.scss";
+@import "blocks/advantages-list.scss";
+@import "blocks/reviews.scss";
+@import "blocks/price.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/contest-header.scss";
+@import "blocks/main-form.scss";
+@import "blocks/page-form.scss";
+@import "blocks/user__list.scss";
+@import "blocks/page-form__achievements.scss";
+@import "blocks/contacts-form.scss";
+@import "blocks/app-form.scss";
+@import "blocks/description-form.scss";
+@import "blocks/photo-header.scss";
+@import "blocks/photo-block\ post.scss";
+@import "blocks/catalog-upload upload.scss";

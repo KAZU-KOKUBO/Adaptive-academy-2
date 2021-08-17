@@ -1,0 +1,42 @@
+.contacts {
+  text-align: center;
+  align-items: center;
+}
+
+.contacts__slogan {
+  padding: 50px 0 0 0;
+}
+
+.contacts__slogan,
+.contacts__slogan-small {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+}
+
+.contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__item {
+  padding: 20px 0 0 0;
+}
+
+.contacts__item a {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $basic-pink;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  justify-content: center;
+  color: $darken-blue;
+  font-weight: 700;
+}

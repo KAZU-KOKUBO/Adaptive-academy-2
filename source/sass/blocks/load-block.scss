@@ -1,0 +1,22 @@
+.info-header__load-link {
+  padding: 21px 39px 21px 38px;
+  border: 3px solid $basic-white;
+  box-sizing: border-box;
+  border-radius: 29px;
+  margin: 0;
+  display: flex;
+  width: 280px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.load-block__info {
+  width: 280px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  text-align: center;
+  color: $basic-white;
+  padding: 0 20px 38px 20px;
+}
