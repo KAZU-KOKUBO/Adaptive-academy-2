@@ -3,6 +3,7 @@
 @import "global/variables.scss";
 @import "global/global.scss";
 @import "global/fonts.scss";
+@import "global/utils.scss";
 
 
 // blocks
@@ -13,20 +14,28 @@
 @import "blocks/main-nav.scss";
 @import "blocks/load-block.scss";
 @import "blocks/advantages.scss";
-@import "blocks/advantages-slogan.scss";
-@import "blocks/advantages-list.scss";
 @import "blocks/reviews.scss";
 @import "blocks/price.scss";
 @import "blocks/contacts.scss";
-@import "blocks/footer.scss";
+@import "blocks/page-footer.scss";
 @import "blocks/contest-header.scss";
 @import "blocks/main-form.scss";
 @import "blocks/page-form.scss";
-@import "blocks/user__list.scss";
 @import "blocks/page-form__achievements.scss";
 @import "blocks/contacts-form.scss";
 @import "blocks/app-form.scss";
 @import "blocks/description-form.scss";
 @import "blocks/photo-header.scss";
-@import "blocks/photo-block\ post.scss";
-@import "blocks/catalog-upload upload.scss";
+@import "blocks/post.scss";
+@import "blocks/catalog-upload";
+@import "blocks/upload.scss";
+@import "blocks/page-form__contacts.scss";
+@import "blocks/page-form__app.scss";
+@import "blocks/page-form__text.scss";
+@import "blocks/asterisk-color.scss";
+@import "blocks/page-form__description.scss";
+@import "blocks/page-form__user.scss";
+@import "blocks/achievements.scss";
+@import "blocks/page-form__info.scss";
+@import "blocks/user.scss";
+@import "blocks/page-body.scss";
