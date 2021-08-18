@@ -1,0 +1,14 @@
+.page-body {
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $darken-blue;
+  background-color: $basic-white;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
