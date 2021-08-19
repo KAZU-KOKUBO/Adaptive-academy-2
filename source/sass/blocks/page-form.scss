@@ -1,3 +1,45 @@
 .page-form {
   background-color: $basic-white;
 }
+
+.page-form__user {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.page-form__text {
+  border: none;
+}
+
+.page-form__info {
+  padding: 50px 20px 0 20px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+.page-form__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-pink;
+  padding: 42px 68px 22px 68px;
+}
+
+.page-form__contacts {
+  border: none;
+}
+
+.page-form__app {
+  background-color: $basic-wheat;
+  padding: 0;
+  margin-top: 50px;
+  border: none;
+}
+
+.page-form__achievements {
+  background-color: $basic-wheat;
+  margin: 30px 0 0 0;
+  border: none;
+}
