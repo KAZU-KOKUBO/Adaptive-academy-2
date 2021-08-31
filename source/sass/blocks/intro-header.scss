@@ -1,6 +1,19 @@
 .intro-header {
-  background-image: url("../img/back-mobile.png");
-  background-repeat: no-repeat;
   background-color: $darken-gray;
   margin: 0 auto;
+  background-image: url("../img/back-mobile.png");
+  background-repeat: no-repeat;
+  width: 100%;
+
+  @media (min-width: $mobile-width-only) {
+    background-image: url("../img/back-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

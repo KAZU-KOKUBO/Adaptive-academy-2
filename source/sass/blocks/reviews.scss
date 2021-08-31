@@ -35,3 +35,16 @@
   align-items: center;
   text-align: center;
 }
+
+.reviews__timer {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__timer {
+    display: block;
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+  }
+}
