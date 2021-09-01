@@ -9,6 +9,19 @@
   padding: 0 20px 38px 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .load-block__info {
+    width: 300px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    text-align: center;
+    color: $basic-white;
+    padding: 0 20px 38px 20px;
+  }
+}
+
 .load-block__load-list {
   margin: 0;
   padding: 32px 38px 31px 32px;
