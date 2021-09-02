@@ -4,17 +4,12 @@
   background-image: url("../img/back-mobile.png");
   background-repeat: no-repeat;
   width: 100%;
-  background-size: 100% 426px;
-
-  @media (min-width: $mobile-width-only) {
-    background-image: url("../img/back-tablet.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  background-size: contain;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/back-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 0;
   }
 }
