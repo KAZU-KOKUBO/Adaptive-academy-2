@@ -4,6 +4,19 @@
   font-size: 24px;
   line-height: 33px;
   padding: 36px 74px 20px 74px;
-  align-items: center;
   text-align: center;
+  width: 320px;
+  margin: 0 auto;
+  align-items: center;
 }
+
+@media (min-width: $tablet-width) {
+  .photo-header__info {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    width: 520px;
+    margin: 0 auto 100px;
+  }
+}
+
