@@ -5,24 +5,38 @@
 }
 
 .user__item {
-  margin: 0 0 0 15px;
+  margin: 0 20px 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .user__item {
+    display: flex;
+    margin: 60px 0 0 0;
+  }
 }
 
 .user__label {
   display: flex;
-  margin: 0 0 0 23px;
+  margin: 0 0 0 20px;
   font-size: 14px;
   line-height: 30px;
   color: $basic-pink;
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .user__label {
+    margin: 15px 15px 0 20px;
+  }
+}
+
 .user__input {
-  padding: 20px 78px 23px 20px;
+  padding: 10px 24px 10px 20px;
   border: 2px solid $basic-gray;
   border-radius: 1px;
   font-size: 18px;
   line-height: 30px;
+  width: 100%;
 }
 
 .user__input::placeholder {

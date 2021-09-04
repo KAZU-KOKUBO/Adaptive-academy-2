@@ -96,8 +96,8 @@
       </h1>
       <p class="page-form__info">
         <span>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
-          миль на вашу бонусную карту!</span>
-        <span>Пожалуйста, заполните форму ниже:</span>
+          миль на вашу бонусную карту!<span class="page-form__title--small"> Пожалуйста, заполните форму ниже:</span></span>
+        <span class="page-form__title">Пожалуйста, заполните форму ниже:</span>
       </p>
       <form class="page-form__form" method="POST" action="https://echo.htmlacademy.ru">
         <fieldset class="page-form__user user">
@@ -132,34 +132,40 @@
               </legend>
               <ul class="achievements__list">
                 <li class="achievements__items">
-                  <input class="achievements__input" id="first-item" type="checkbox" name="crazy achievements"
+                  <label class="achievements__label" for="first-item">
+                  <input class="achievements__input visually-hidden" id="first-item" type="checkbox" name="crazy achievements"
                     value="first-achievements" checked />
-                  <label class="achievements__label" for="first-item">Сделал селфи с акулой</label>
+                  <span class="checkbox--span">Сделал селфи с акулой</span</label>
                 </li>
                 <li class="achievements__items">
-                  <input class="achievements__input" id="second-item" type="checkbox" name="crazy achievements"
+                  <label class="achievements__label" for="second-item">
+                  <input class="achievements__input visually-hidden" id="second-item" type="checkbox" name="crazy achievements"
                     value="second-achievements" checked />
-                  <label class="achievements__label" for="second-item">Обгорел на пляже</label>
+                  <span class="checkbox--span">Обгорел на пляже</span></label>
                 </li>
                 <li class="achievements__items">
-                  <input class="achievements__input" id="third-item" type="checkbox" name="crazy achievements"
+                  <label class="achievements__label" for="third-item">
+                  <input class="achievements__input visually-hidden" id="third-item" type="checkbox" name="crazy achievements"
                     value="third-achievements" />
-                  <label class="achievements__label" for="third-item">Видел Чака Норриса</label>
+                  <span class="checkbox--span">Видел Чака Норриса</span></label>
                 </li>
                 <li class="achievements__items">
-                  <input class="achievements__input" id="fourth-item" type="checkbox" name="crazy achievements"
+                  <label class="achievements__label" for="fourth-item">
+                  <input class="achievements__input visually-hidden" id="fourth-item" type="checkbox" name="crazy achievements"
                     value="fourth-achievements" />
-                  <label class="achievements__label" for="fourth-item">Накупил сувениров</label>
+                  <span class="checkbox--span">Накупил сувениров</span></label>
                 </li>
                 <li class="achievements__items">
-                  <input class="achievements__input" id="fifth-item" type="checkbox" name="crazy achievements"
+                  <label class="achievements__label" for="fifth-item">
+                  <input class="achievements__input visually-hidden" id="fifth-item" type="checkbox" name="crazy achievements"
                     value="fifth-achievements" checked />
-                  <label class="achievements__label" for="fifth-item">Удержал башню</label>
+                  <span class="checkbox--span">Удержал башню</span></label>
                 </li>
                 <li class="achievements__items">
-                  <input class="achievements__input" id="sixth-item" type="checkbox" name="crazy achievements"
+                  <label class="achievements__label" for="sixth-item">
+                  <input class="achievements__input visually-hidden" id="sixth-item" type="checkbox" name="crazy achievements"
                     value="sixth-achievements" />
-                  <label class="achievements__label" for="sixth-item">Разгромил отель</label>
+                  <span class="checkbox--span">Разгромил отель</span></label>
                 </li>
               </ul>
             </fieldset>
