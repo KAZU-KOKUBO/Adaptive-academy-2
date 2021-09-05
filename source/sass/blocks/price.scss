@@ -1,0 +1,71 @@
+.price {
+  background-color: $basic-wheat;
+}
+
+.price__value {
+  background-color: $darken-blue;
+  color: $basic-white;
+  width: 234px;
+}
+
+.price__value--empty {
+  background-color: inherit;
+}
+
+.price__field {
+  color: $darken-blue;
+  background-color: $basic-white;
+}
+
+.price__value p {
+  font-weight: 300;
+}
+
+.price__toggles {
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .price__toggles {
+    display: none;
+  }
+}
+
+.price__field--ok {
+  background-image: url("../img/yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.price__field--cancel {
+  background-image: url("../img/no.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.price__table {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .price__table {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__table {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+.price__table--column {
+  width: 234px;
+}
+
+.price__value__title {
+  margin: 0;
+}

@@ -1,0 +1,35 @@
+.contacts-form {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-form__item {
+  margin: 0 20px 0 20px;
+}
+
+.contacts-form__label {
+  display: flex;
+  color: $basic-pink;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0 0 0 20px;
+}
+
+.contacts-form__input {
+  padding: 10px 24px 10px 20px;
+  border: 2px solid $basic-gray;
+  border-radius: 1px;
+  font-size: 18px;
+  line-height: 30px;
+  width: 100%;
+}
+
+.contacts-form__input::placeholder {
+  color: $darken-blue;
+}

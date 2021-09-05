@@ -1,0 +1,19 @@
+.app-form__title {
+  width: 178px;
+  height: 29px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-pink;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.app-form__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 90px;
+  font-size: 18px;
+  line-height: 30px;
+}
