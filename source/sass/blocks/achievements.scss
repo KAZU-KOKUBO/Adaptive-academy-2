@@ -1,3 +1,22 @@
+.achievements__list {
+  margin: 0;
+  padding: 0 0 20px 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@media (min-width: $desktop-width) {
+  .achievements__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.achievements__items {
+  margin: 69px 0 0 0;
+}
+
 .achievements__title {
   color: $basic-pink;
   font-size: 14px;
@@ -5,16 +24,89 @@
   text-transform: uppercase;
   text-align: center;
   align-items: center;
+  padding: 46px 0 0 0;
+  width: 218px;
 }
 
-.achievements__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@media (min-width: $tablet-width) {
+  .achievements__title {
+    width: 374px;
+    padding: 0;
+  }
+}
+
+.achievements__label input:checked ~ span::after {
+  background-image: url("../img/bird.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.achievements__label input:disabled ~ span::after {
+  background-image: url("../img/bird.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.achievements__label input:disabled ~ span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 15%;
+  border: 2px solid $basic-pink;
+}
+
+.checkbox--span {
+  position: relative;
+  padding-left: 62px;
   font-size: 18px;
   line-height: 30px;
+  cursor: pointer;
 }
 
-.achievements__items {
-  margin: 69px 0 0 0;
+.checkbox--span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 15%;
+  border: 2px solid $basic-gray;
+  background-color: $basic-white;
+}
+
+.checkbox--span::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 18px;
+  top: 8px;
+  left: 7px;
+}
+
+.achievements__label input:focus ~ span::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 15%;
+  outline: 2px solid $basic-black;
+}
+
+.achievements {
+  background-color: $basic-wheat;
+  margin: 30px 0 0 0;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .achievements {
+    background-color: $basic-white;
+    border: 1px solid $basic-gray;
+    margin: 20px;
+  }
 }
