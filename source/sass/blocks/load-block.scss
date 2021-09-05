@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+    width: 25%;
   }
 }
 
@@ -47,6 +47,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .load-block__load-item {

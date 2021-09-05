@@ -14,43 +14,24 @@
 
 .page-header__logo--mobile {
   margin: 20px auto 21px 23px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .page-header__logo--tablet {
   margin: 10px auto 21px 23px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .page-header__logo--desktop {
   margin: 23px auto 25px 132px;
-}
 
-
-@media (min-width: $tablet-width) {
-  .page-header__logo--mobile {
-    display: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .page-header__logo--mobile {
-    margin: 20px auto 21px 23px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__logo--tablet {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__logo--tablet {
-    display: none;
-  }
-}
-
-@media (max-width: $desktop-width) {
-  .page-header__logo--desktop {
+  @media (max-width: $desktop-width) {
     display: none;
   }
 }

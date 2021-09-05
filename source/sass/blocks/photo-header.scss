@@ -8,11 +8,8 @@
   width: 320px;
   margin: 0 auto;
   align-items: center;
-}
 
-@media (min-width: $tablet-width) {
-  .photo-header__info {
-    font-weight: 300;
+  @media (min-width: $tablet-width) {
     font-size: 50px;
     line-height: 68px;
     width: 520px;

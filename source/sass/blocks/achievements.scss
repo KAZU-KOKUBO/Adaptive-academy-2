@@ -26,10 +26,8 @@
   align-items: center;
   padding: 46px 0 0 0;
   width: 218px;
-}
 
-@media (min-width: $tablet-width) {
-  .achievements__title {
+  @media (min-width: $tablet-width) {
     width: 374px;
     padding: 0;
   }

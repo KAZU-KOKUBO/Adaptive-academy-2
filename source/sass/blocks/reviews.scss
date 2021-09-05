@@ -52,10 +52,8 @@
 .reviews__toggles {
   align-items: center;
   text-align: center;
-}
 
-@media (min-width: $desktop-width) {
-  .reviews__toggles {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }

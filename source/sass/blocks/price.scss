@@ -6,22 +6,44 @@
 
 .price__wrapper {
   position: relative;
-  transform: translateX(-50%);
+  transform: translateX(-81%);
+
+  @media (min-width: $tablet-width) {
+    transform: none;
+  }
 }
 
 .price__value {
+  min-width: 277px;
   background-color: $darken-blue;
   color: $basic-white;
-  min-width: 234px;
+  text-transform: uppercase;
+  padding: 10px 0 25px 0;
+
+
+  @media (min-width: $tablet-width) {
+    min-width: 152px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 254px;
+  }
 }
 
 .price__value--empty {
   background-color: inherit;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .price__field {
   color: $darken-blue;
   background-color: $basic-white;
+  padding: 10px 0 10px 20px;
+  text-transform: uppercase;
 }
 
 .price__value p {
@@ -42,30 +64,41 @@
 .price__field--ok {
   background-image: url("../img/yes.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 230px;
+
+  @media (min-width: $tablet-width) {
+    background-position: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price__field--ok span,
+  .price__field--cancel span {
+    display: none;
+  }
 }
 
 .price__field--cancel {
   background-image: url("../img/no.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 230px;
+  padding: 15px 0 15px 20px;
+
+  @media (min-width: $tablet-width) {
+    background-position: center;
+  }
 }
 
 .price__table {
   width: 100%;
-}
 
-@media (min-width: $tablet-width) {
-  .price__table {
+  @media (min-width: $tablet-width) {
     width: 80%;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .price__table {
+  @media (min-width: $desktop-width) {
     width: 75%;
-    margin: 0 auto;
   }
 }
 
@@ -75,4 +108,13 @@
 
 .price__value__title {
   margin: 0;
+}
+
+.price__field--none {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 25px 0;
+  }
 }

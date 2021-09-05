@@ -6,10 +6,8 @@
 
 .user__item {
   margin: 0 20px 0 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .user__item {
+  @media (min-width: $tablet-width) {
     display: flex;
     margin: 60px 0 0 0;
   }
@@ -22,10 +20,8 @@
   line-height: 30px;
   color: $basic-pink;
   text-transform: uppercase;
-}
 
-@media (min-width: $tablet-width) {
-  .user__label {
+  @media (min-width: $tablet-width) {
     margin: 15px 15px 0 20px;
   }
 }

@@ -8,6 +8,14 @@
 
 .page-form__title {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .page-form__user {
@@ -28,32 +36,22 @@
   align-items: center;
   width: 280px;
   margin: 0 auto;
-}
 
-@media (min-width: $tablet-width) {
-  .page-form__info {
+  @media (min-width: $tablet-width) {
     width: 490px;
   }
 
-  .page-form__title {
-    display: block;
-  }
-
-  .page-form__title--small {
-    display: none;
+  @media (min-width: $desktop-width) {
+    width: 656px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .page-form__info {
-    width: 656px;
-  }
-
-  .page-form__title {
+.page-form__title--small {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 
-  .page-form__title--small {
+  @media (min-width: $desktop-width) {
     display: contents;
   }
 }
@@ -78,10 +76,8 @@
 
 .page-form__achievements {
   background-color: #f2f2f2;
-}
 
-@media (min-width: $tablet-width) {
-  .page-form__achievements {
+  @media (min-width: $tablet-width) {
     background-color: $basic-white;
   }
 }

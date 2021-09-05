@@ -2,10 +2,8 @@
   text-align: center;
   align-items: center;
   margin: 40px 0 0 0;
-}
 
-@media (min-width: $tablet-width) {
-  .page-footer {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -28,16 +26,14 @@
 
 .page-footer__logo-desktop {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__logo-tablet {
     display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer__logo-desktop {
-    display: block;
   }
 }

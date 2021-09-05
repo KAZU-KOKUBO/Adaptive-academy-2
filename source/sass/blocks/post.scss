@@ -6,25 +6,16 @@
   margin: 0 auto;
   width: 300px;
   padding-top: 54px;
-}
 
-@media (min-width: $tablet-width) {
-  .post__title {
-    text-align: center;
-    align-items: center;
+  @media (min-width: $tablet-width) {
     margin: 0 auto;
     width: 450px;
     font-size: 18px;
     line-height: 30px;
   }
 
-  .post__title--small {
-    text-align: center;
-    align-items: center;
-    font-size: 18px;
-    line-height: 30px;
-    margin: 0 auto;
-    width: 400px;
+  @media (min-width: $desktop-width) {
+    width: 572px;
   }
 }
 
@@ -35,37 +26,27 @@
   line-height: 30px;
   margin: 0 auto;
   width: 300px;
-}
 
-@media (min-width: $tablet-width) {
-  .post__title--small {
+  @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
 .post__title--tablet {
   display: none;
-}
 
-@media (min-width: $tablet-width) {
-  .post__title--tablet {
+  @media (min-width: $tablet-width) {
     display: contents;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .post__title--tablet {
+  @media (min-width: $desktop-width) {
     display: none;
-  }
-
-  .post__title {
-    width: 572px;
-  }
-
-  .post__title--small {
-    display: block;
-    font-size: 18px;
-    line-height: 30px;
   }
 }
 
@@ -122,10 +103,6 @@
 .post__item--panorama {
   position: relative;
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -160,35 +137,35 @@
   .panorama__picture--mobile {
     display: none;
   }
+}
 
-  .panorama__picture--tablet {
+.panorama__picture--tablet {
+  @media (min-width: $tablet-width) {
     display: block;
     width: 100%;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .panorama__picture--tablet {
+  @media (min-width: $desktop-width) {
     display: none;
   }
+}
 
+@media (min-width: $tablet-width) {
   .panorama__picture--desktop {
     display: block;
     width: 100%;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .post__item__wrapper--small {
-    display: grid;
+.post__item__wrapper--small {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .post__item__wrapper--small {
-    display: grid;
+  @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
   }
