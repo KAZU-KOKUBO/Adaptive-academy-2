@@ -6,6 +6,15 @@
   padding: 0;
 }
 
+.upload-form {
+  display: grid;
+  grid-template-areas:
+    '3'
+    '1'
+    '2';
+}
+
+
 .upload__info--small {
   margin: 49px 0 0 0;
 }
@@ -17,6 +26,11 @@
 .upload__form-button {
   text-align: center;
   align-items: center;
+  grid-area: 3;
+}
+
+.upload__form-buttons {
+  grid-area: 3;
 }
 
 .upload__form-button--download {
@@ -37,4 +51,10 @@
 
 .upload__picture-img {
   margin: 20px;
+  grid-area: 1;
 }
+
+.upload__picture {
+  grid-area: 2;
+}
+

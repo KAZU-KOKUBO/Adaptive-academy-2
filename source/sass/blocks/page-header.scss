@@ -37,7 +37,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .page-header__logo--tablet {
     display: none;
   }
@@ -52,5 +52,14 @@
 @media (max-width: $desktop-width) {
   .page-header__logo--desktop {
     display: none;
+  }
+}
+
+.page-header__wrapper {
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
   }
 }

@@ -4,7 +4,9 @@
   background-image: url("../img/back-mobile.png");
   background-repeat: no-repeat;
   width: 100%;
-  background-size: contain;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/back-desktop.png");

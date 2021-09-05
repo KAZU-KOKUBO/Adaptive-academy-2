@@ -95,6 +95,21 @@
   font-weight: 700;
 }
 
+.contacts__map {
+  max-height: 320px;
+  overflow: hidden;
+  clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+
+  @media (min-width: $tablet-width) {
+    max-height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: 502px;
+  }
+}
+
+
 .contacts__map--desktop,
 .contacts__map--tablet {
   display: none;
