@@ -61,7 +61,6 @@
 
 .post__item {
   width: 280px;
-  background-color: $basic-wheat;
   margin: 20px 0 0 0;
 
   @media (min-width: $tablet-width) {
@@ -70,8 +69,12 @@
 }
 
 .post__wrapper {
-  padding: 0 0 0 17px;
-  margin: 0;
+  padding: 20px;
+  margin: -10px auto 0 auto;
+  background-color: $basic-wheat;
+  width: 100%;
+  max-width: 300px;
+  height: 155px;
 }
 
 .post__author {
@@ -107,13 +110,23 @@
 
 @media (min-width: $tablet-width) {
   .post__info--panorama {
-    width: 550px;
-    margin: 20px 20px 0 20px;
+    width: 100%;
+    max-width: 940px;
+    margin: -10px auto 0 auto;
+    background-color: $basic-wheat;
   }
 }
 
 .panorama__picture--mobile {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 506px;
+  }
 }
 
 .panorama__info {
@@ -128,46 +141,20 @@
   text-transform: uppercase;
 }
 
-.panorama__picture--tablet,
-.panorama__picture--desktop {
-  display: none;
-}
-
-@media (min-width: $tablet-width) {
-  .panorama__picture--mobile {
-    display: none;
-  }
-}
-
-.panorama__picture--tablet {
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .panorama__picture--desktop {
-    display: block;
-    width: 100%;
-  }
-}
-
 .post__item__wrapper--small {
   display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px;
+    grid-column-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 30px;
+    grid-column-gap: 20px;
   }
 }
 

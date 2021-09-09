@@ -1,0 +1,62 @@
+.controls__button {
+  width: 2px;
+  height: 6px;
+  background-color: $darken-blue;
+  opacity: 20%;
+  border-radius: 50%;
+  position: relative;
+  border: none;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls__button--current {
+  width: 12px;
+  height: 12px;
+  background-color: $darken-blue;
+  opacity: 100%;
+  border-radius: 50%;
+  position: relative;
+  border: none;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $basic-white;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+}
+
+.controls__button:hover {
+  width: 12px;
+  height: 12px;
+  background-color: $darken-blue;
+  border-radius: 50%;
+  opacity: 100%;
+  position: relative;
+  border: none;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $basic-white;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+}

@@ -2,7 +2,8 @@
   background-color: $darken-gray;
   width: 100vw;
   margin-left: -20px;
-  padding: 28px 20px 38px 20px;
+  margin-top: -40px;
+  padding: 28px 23px 31px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,13 +41,13 @@
 }
 
 .load-block__load-list {
-  width: 70%;
-  margin: 0 0 40px 0;
+  width: 222px;
+  margin: 3px 0 10px 6px;
   padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 14px;
 
   @media (min-width: $desktop-width) {
     width: 100%;
@@ -57,4 +58,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.load-block-item--microsoft {
+  transform: translateY(3px);
 }

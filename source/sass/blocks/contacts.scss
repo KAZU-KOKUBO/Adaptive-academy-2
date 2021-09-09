@@ -1,6 +1,7 @@
 .contacts {
   text-align: center;
   align-items: center;
+  margin: -9px 0 0 0;
 }
 
 .contacts__slogan {
@@ -27,8 +28,10 @@
 
 .contacts__list {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 2px 0 28px 0;
+  margin: 15px auto 6px auto;
+  max-width: 1200px;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -38,12 +41,11 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 67px 0 68px;
   }
 }
 
 .contacts__item {
-  padding: 20px 0 0 0;
+  margin: 16px auto 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -69,6 +71,12 @@
   color: $basic-pink;
 }
 
+.contacts__addres {
+  width: 283px;
+  display: flex;
+  margin: 0 auto;
+}
+
 .contacts__title {
   font-size: 18px;
   line-height: 25px;
@@ -81,7 +89,7 @@
 .contacts__map {
   max-height: 320px;
   overflow: hidden;
-  clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
 
   @media (min-width: $tablet-width) {
     max-height: 374px;

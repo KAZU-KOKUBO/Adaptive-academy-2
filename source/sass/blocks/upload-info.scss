@@ -9,11 +9,10 @@
 .upload-form {
   display: grid;
   grid-template-areas:
-    '3'
-    '1'
-    '2';
+    "image"
+    "input"
+    "buttons";
 }
-
 
 .upload__info--small {
   margin: 49px 0 0 0;
@@ -30,7 +29,7 @@
 }
 
 .upload__form-buttons {
-  grid-area: 3;
+  grid-area: buttons;
 }
 
 .upload__form-button--download {
@@ -51,9 +50,31 @@
 
 .upload__picture-img {
   margin: 20px;
-  grid-area: 1;
+  grid-area: image;
 }
 
 .upload__picture {
-  grid-area: 2;
+  grid-area: input;
+}
+
+.picture__button-range {
+  height: 2px;
+  background-color: $darken-blue;
+  outline: none;
+  appearance: none;
+
+  &::-webkit-slider-thumb {
+    background-color: $basic-white;
+    border: 2px solid $basic-pink;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    outline: none;
+    appearance: none;
+  }
+
+  &--active {
+    width: 240px;
+    margin-bottom: 33px;
+  }
 }
