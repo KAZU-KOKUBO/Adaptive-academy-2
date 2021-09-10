@@ -147,7 +147,7 @@
                 <a href="form.html">Конкурс</a>
               </li>
               <li class="main-nav__item">
-                <a href="https://up.htmlacademy.ru/adaptive/23">Html Academy</a>
+                <a href="https://up.htmlacademy.ru/adaptive/23">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -194,7 +194,7 @@
               </svg>
             </a>
           </li>
-          <li class="load-block__load-item .load-block-item--microsoft">
+          <li class="load-block__load-item load-block-item--microsoft">
             <a class="load-block__link" href="https://www.microsoft.com/ru-ru/" aria-label="Скачать на windows">
               <svg width="44" height="41" viewBox="0 0 44 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.908 19.5238H0V0H20.908V19.5238Z" fill="#F05423" />
@@ -219,7 +219,7 @@
         <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="advantages__slogan-wrapper">
           <p class="advantages__slogan">Устали от серости мегаполиса?</p>
-          <p class="advantages__slogan-small">Нам есть, что вам предложить</p>
+          <p class="advantages__slogan-small">Нам есть, что вам предложить!</p>
         </div>
         <div class="advantages__list-wrapper">
           <ul class="advantages__list">
@@ -238,14 +238,14 @@
               <h3 class="advantages__title">Меняет мир вокруг</h3>
               <p class="advantages__description">
                 Сделайте снимок и украсьте его смайликом или текстовой
-                подписью, чтобы усилить эффект
+                подписью, чтобы<br class="advantages__description--tablet">усилить эффект
               </p>
               <div class="advantages__image-wrapper">
                 <img class="advantages__image advantages__image--desktop" src="img/advantages2.png" width="157"
                   height="320" alt="Смартфон" />
               </div>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--last">
               <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__description">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
@@ -265,12 +265,15 @@
       </div>
       <div class="advantages__timer">
         <div class="advantages__timer-wrapper">
-        <img class="advantages__timer-img" src="img/timer.svg" alt="Таймер эффект 24 часа" />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/desktop-timer.png"/>
+            <img class="advantages__timer-img" src="img/timer.svg" alt="Таймер эффект 24 часа" />
+          </picture>
         <div class="advantages__timer-text">
-          <p class="advantages__timer-effect">Эффект на 24 часа!</p>
+          <p class="advantages__timer-effect">Эффект<br class="advantages__description--tablet"> на 24 часа!</p>
           <p class="advantages__timer-title">
-            Британские ученые провели исследования и доказали, что
-            положительный эффект от использования приложения длится целые
+            Британские ученые провели исследования и доказали,<br class="advantages__description--desktop">что
+            положительный эффект <br class="advantages__description--tablet">от использования приложения длится целые
             сутки!
           </p>
           <a href="#" class="advantages__timer-link">Узнать больше об исследовании</a>
@@ -392,7 +395,7 @@
       <p class="contacts__slogan">Остались вопросы?</p>
       <p class="contacts__slogan-small">Cвяжитесь с нами!</p>
       <ul class="contacts__list">
-        <li class="contacts__item">
+        <li class="contacts__item contacts__title--first">
           <span class="contacts__title">Звоните:</span>
           <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </li>
@@ -406,9 +409,11 @@
         </li>
       </ul>
       <div class="contacts__map">
-        <img class="contacts__map--mobile" src="img/map.png" width="320" height="200" alt="Карта" />
-        <img class="contacts__map--tablet" src="img/tablet-map.png" width="660" height="374" alt="Карта" />
-        <img class="contacts__map--desktop" src="img/desktop-map.png" width="1200" height="793" alt="Карта" />
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/desktop-map.png"/>
+          <source media="(min-width: 660px)" srcset="img/tablet-map.png"/>
+          <img class="contacts__map" src="img/map.png" width="320" height="200" alt="Карта" />
+      </picture>
       </div>
     </section>
   </main>

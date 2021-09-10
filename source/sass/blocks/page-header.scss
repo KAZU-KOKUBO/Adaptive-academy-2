@@ -9,7 +9,6 @@
 }
 
 .page-header__logo {
-  position: absolute;
   z-index: 2;
 }
 
@@ -23,12 +22,11 @@
 
 .page-header__logo--tablet {
   display: none;
-  margin: 10px auto 21px 23px;
+  margin: 26px auto 45px 20px;
 
   @media (min-width: $tablet-width) {
     display: block;
   }
-
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -36,7 +34,7 @@
 }
 
 .page-header__logo--desktop {
-  margin: 23px auto 25px 132px;
+  margin: 27px 0 23px 110px;
 
   @media (max-width: $desktop-width) {
     display: none;
@@ -44,6 +42,8 @@
 }
 
 .page-header__wrapper {
+  display: flex;
+
   @media (min-width: $desktop-width) {
     max-width: 1200px;
     padding: 0 20px;

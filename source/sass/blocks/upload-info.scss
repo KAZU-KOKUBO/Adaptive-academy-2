@@ -12,6 +12,12 @@
     "image"
     "input"
     "buttons";
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas:
+      "image input"
+      "image buttons";
+  }
 }
 
 .upload__info--small {
@@ -55,6 +61,7 @@
 
 .upload__picture {
   grid-area: input;
+  border: none;
 }
 
 .picture__button-range {

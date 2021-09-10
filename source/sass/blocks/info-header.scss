@@ -4,14 +4,14 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    margin: 100px 0 0 0;
+    margin: 90px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     max-width: 1200px;
-    padding: 0 60px;
-    margin: 100px auto 0 auto;
+    padding: 0 0 0 149px;
+    margin: 96px auto 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -26,7 +26,7 @@
   align-items: center;
   text-align: center;
   color: $basic-white;
-  padding: 23px 22px 59px 20px;
+  padding: 13px 22px 59px 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -34,12 +34,14 @@
     line-height: 48px;
     display: flex;
     width: 250px;
+    padding: 3px 2px 42px 12px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
     margin: 0;
+    padding: 3px 2px 48px 12px;
   }
 }
 
@@ -56,17 +58,19 @@
   font-weight: bold;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 20px 16px 38px;
-    width: 315px;
+    padding: 15px 0 16px 45px;
+    width: 300px;
+    transform: translateX(6px);
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 20px 16px 25px;
-    margin: 0 0 75px 0;
+    padding: 16px 20px 16px 29px;
+    margin: 0;
     display: flex;
-    width: 290px;
+    width: 300px;
     font-size: 21px;
     line-height: 18px;
+    transform: unset;
   }
 }
 
@@ -78,17 +82,18 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 0;
-    left: 22px;
-    top: 0;
+    left: 20px;
+    top: 13px;
     bottom: 0;
     width: 660px;
     height: 545px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 200px;
+    left: 166px;
     width: 1050px;
     height: 645px;
+    top: 32px;
   }
 }
 

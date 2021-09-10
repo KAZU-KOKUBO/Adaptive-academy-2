@@ -23,6 +23,11 @@
 
   @media (min-width: $tablet-width) {
     transform: none;
+    padding: 111px 0 52px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 175px 0 52px 0;
   }
 }
 
@@ -39,10 +44,16 @@
 
   @media (min-width: $tablet-width) {
     min-width: 152px;
+    padding: 12px 0 10px 3px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 254px;
+    min-width: 234px;
+    height: 97px;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 6px 0 12px 3px;
   }
 }
 
@@ -60,6 +71,18 @@
   background-color: $basic-white;
   padding: 13px 0 15px 22px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+    padding: 0 0 0 14px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 13px 2px 15px 22px;
+  }
 }
 
 .price__value p {
@@ -67,6 +90,11 @@
   font-size: 18px;
   line-height: 30px;
   margin: -3px 0 0 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    margin: 0;
+  }
 }
 
 .price__toggles {
@@ -147,6 +175,16 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    padding: 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 29px 0;
   }
+}
+
+
+.price__value--hit {
+  background-image: url("../img/ribbon.svg");
+  background-repeat: no-repeat;
 }

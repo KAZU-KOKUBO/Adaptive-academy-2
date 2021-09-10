@@ -1,7 +1,12 @@
 .main-nav {
-  position: absolute;
   z-index: 1;
+  position: absolute;
   width: 100vw;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    position: static;
+  }
 }
 
 .main-nav__list a {
@@ -19,10 +24,10 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 200px 139px 198px 163px;
     list-style: none;
-    padding: 31px 101px 0 411px;
-    margin: 0;
+    padding: 45px 0 0 0;
+    margin: 0 0 0 108px;
     text-align: center;
     font-weight: 400;
     font-size: 18px;
@@ -33,7 +38,6 @@
 .main-nav__item {
   display: flex;
   justify-content: center;
-  padding: 14px;
 
   @media (max-width: $desktop-width) {
     background-color: #283645;
@@ -53,13 +57,17 @@
   border: none;
   outline: none;
   right: 20px;
-  top: 8px;
+  top: -14px;
   width: 50px;
   min-height: 66px;
   font-size: 0;
   line-height: 0;
   background-color: transparent;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+  }
 }
 
 .icon-burger {
@@ -133,13 +141,14 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 17px;
-  width: 36px;
-  height: 2px;
+  top: 35px;
+  left: 0;
+  width: 50px;
+  height: 4px;
   background-color: #ffffff;
-  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
 }
+
 
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: fade(#ffffff, 30%);
