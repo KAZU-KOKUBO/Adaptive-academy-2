@@ -1,7 +1,12 @@
 .page-header {
   margin: 0;
-  min-height: 66px;
+  height: 66px;
   background: rgba($basic-black, 0.3);
+
+  @media (min-width: $tablet-width) {
+    min-height: 66px;
+    height: 111px;
+  }
 
   @media (min-width: $desktop-width) {
     height: 110px;

@@ -1,5 +1,5 @@
 .photo-header {
-  margin-bottom: 200px;
+  margin-bottom: 58px;
 }
 
 .photo-header__info {
@@ -7,7 +7,7 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
-  padding: 36px 74px 20px 74px;
+  padding: 27px 74px 20px 74px;
   text-align: center;
   width: 320px;
   margin: 0 auto;
@@ -18,5 +18,11 @@
     line-height: 68px;
     width: 520px;
     margin: 0 auto 100px;
+    padding: 65px 74px 28px 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59px 74px 28px 74px;
+    margin: 0 auto 61px;
   }
 }
