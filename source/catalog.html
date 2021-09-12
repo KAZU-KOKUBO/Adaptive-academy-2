@@ -288,8 +288,11 @@
       <p class="upload__info upload__info--small">Затмите их всех!</p>
       <p class="upload__info upload__info--long">Выкладывайте все, что накопилось в телефоне!</p>
       <form class="catalog-upload__form upload-form" method="GET" action="https://echo.htmlacademy.ru">
-        <img class="upload__picture-img" src="img/photo7.png" width="280" height="374" alt="Зима" />
-
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-7-tablet.png"/>
+          <source media="(min-width: 660px)" srcset="img/photo-7-tablet.png" />
+          <img class="upload__picture-img" src="img/photo7.png" width="280" height="374" alt="Зима" />
+        </picture>
         <fieldset class="upload__picture picture">
           <legend class="visually-hidden">Картинка</legend>
           <div class="picture__button">
