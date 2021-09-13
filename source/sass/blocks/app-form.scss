@@ -21,7 +21,7 @@
 .app-form__label input:checked ~ span::after {
   width: 5px;
   height: 5px;
-  color: red;
+  color: $basic-white;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;

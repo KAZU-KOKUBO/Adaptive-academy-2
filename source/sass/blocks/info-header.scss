@@ -74,6 +74,15 @@
   }
 }
 
+.info-header__load-link:hover {
+  background-color: $basic-white;
+  color: $basic-pink;
+}
+
+.info-header__load-link:active .load-block-download {
+  opacity: 0.3;
+}
+
 .info-header__img--mobile {
   transform: translate(-20px, -30px);
   max-width: none;

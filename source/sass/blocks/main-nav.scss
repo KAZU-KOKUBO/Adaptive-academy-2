@@ -2,15 +2,33 @@
   z-index: 1;
   position: absolute;
   width: 100vw;
+  text-transform: uppercase;
 
   @media (min-width: $desktop-width) {
     width: 100%;
     position: static;
+    text-transform: none;
   }
 }
 
-.main-nav__list a {
+.main-nav__item--link {
   color: $basic-white;
+  margin: auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.main-nav__item--link:hover {
+  color: $basic-pink;
+}
+
+.main-nav__item--current {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $basic-white;
+    padding-bottom: 11px;
+  }
 }
 
 .main-nav__list {
@@ -43,12 +61,12 @@
     background-color: #283645;
     border-bottom: 1px solid #010101;
     border-top: 1px solid #485461;
-    min-height: 63px;
+    min-height: 64px;
   }
 }
 
 .main-nav__item--nav-height {
-  height: 66px;
+  height: 70px;
 }
 
 .main-nav__toggle {
@@ -106,7 +124,6 @@
   }
 }
 
-
 .main-nav--opened .main-nav__toggle {
   top: 0;
   right: 20px;
@@ -137,7 +154,6 @@
   }
 }
 
-
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -149,14 +165,10 @@
   box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
 }
 
-
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: fade(#ffffff, 30%);
-  box-shadow:
-    0 8px 0 0 fade(#ffffff, 30%),
-    0 16px 0 0 fade(#ffffff, 30%);
+  box-shadow: 0 8px 0 0 fade(#ffffff, 30%), 0 16px 0 0 fade(#ffffff, 30%);
 }
-
 
 @media (max-width: $desktop-width) {
   .main-nav--closed .main-nav__item {

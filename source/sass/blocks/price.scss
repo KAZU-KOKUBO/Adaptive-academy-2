@@ -20,7 +20,6 @@
   margin: 0 auto;
   padding: 134px 0 52px 0;
 
-
   @media (min-width: $tablet-width) {
     transform: none;
     padding: 111px 0 52px 0;
@@ -40,7 +39,6 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-
 
   @media (min-width: $tablet-width) {
     min-width: 152px;
@@ -183,8 +181,15 @@
   }
 }
 
-
 .price__value--hit {
   background-image: url("../img/ribbon.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/ribon.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/ribbon.svg");
+  }
 }

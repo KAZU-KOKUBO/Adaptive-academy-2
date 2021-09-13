@@ -124,3 +124,15 @@
     max-height: 502px;
   }
 }
+
+.contacts__mail:hover {
+  color: $darken-blue;
+  text-decoration: underline;
+}
+
+.contacts__mail:active {
+  color: $darken-blue;
+  opacity: 0.3;
+  text-decoration: none;
+}
+

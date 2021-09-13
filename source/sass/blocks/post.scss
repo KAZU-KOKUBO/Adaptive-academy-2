@@ -78,16 +78,15 @@
 }
 
 .post__wrapper {
-  padding: 14px 20px 20px 17px;
+  padding: 14px 20px 10px 17px;
   margin: -10px auto 0 auto;
   background-color: $basic-wheat;
   width: 100%;
   max-width: 280px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     max-width: 300px;
-    padding: 19px 20px 20px 29px;
+    padding: 19px 20px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -95,10 +94,22 @@
   }
 }
 
+
 .post__author {
   font-weight: 700;
   margin: 0;
   padding: 0;
+}
+
+.post__author--panorama {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    margin: -30px 0 0 0;
+  }
 }
 
 .post__note {
@@ -112,6 +123,23 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
+  order: 2;
+}
+
+.post__likes__text--panorama {
+  padding: 0;
+  margin: 9px 32px;
+  color: $basic-pink;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 6px 49px 0 0;
+    display: flex;
+    align-self: flex-end;
+  }
 }
 
 .post__likes__text {
@@ -119,9 +147,14 @@
   margin: 6px 32px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    margin: 0;
-    top: 104px;
+    padding: 0 0 21px 0;
+    margin: 7px 0 0 0;
+  }
+}
+
+.post__likes__text--items {
+  @media (min-width: $tablet-width) {
+    margin: 31px 0 0 0;
   }
 }
 
@@ -138,16 +171,15 @@
 }
 
 .post__info--panorama {
-  height: 192px;
-
   @media (min-width: $tablet-width) {
     width: 100%;
     max-width: 620px;
     margin: -10px auto 0 auto;
     background-color: $basic-wheat;
-    padding: 19px 10px 10px 30px;
+    padding: 19px 10px 24px 30px;
     position: relative;
-    height: 121px;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
@@ -157,20 +189,11 @@
     background-color: $basic-wheat;
     padding: 20px 10px 10px 27px;
     position: relative;
-    height: 96px;
   }
 }
 
 .panorama__picture--mobile {
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    height: 509px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 506px;
-  }
 }
 
 .panorama__info {
@@ -214,49 +237,6 @@
 
 .post__picture {
   width: 100%;
-}
-
-.post__wrapper--levon {
-  height: 143px;
-
-  @media (min-width: $tablet-width) {
-    height: 155px;
-  }
-}
-
-.post__wrapper--anton,
-.post__wrapper--max,
-.post__wrapper--sergey,
-.post__wrapper--hope {
-  height: 121px;
-
-  @media (min-width: $tablet-width) {
-    height: 155px;
-  }
-}
-
-.post__wrapper--boris {
-  height: 144px;
-
-  @media (min-width: $tablet-width) {
-    height: 155px;
-  }
-}
-
-.post__likes--panorama {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    left: 442px;
-    bottom: 55px;
-    width: 100px;
-  }
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    left: 764px;
-    bottom: 55px;
-    width: 100px;
-  }
 }
 
 .post__item--grid {

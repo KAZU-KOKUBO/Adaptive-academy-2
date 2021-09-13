@@ -19,7 +19,7 @@
     position: absolute;
     width: 52px;
     height: 52px;
-    background-color: red;
+    background-color: $basic-pink;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -32,7 +32,6 @@
   &::before {
     background-image: url("../img/apple.svg");
   }
-
 }
 
 .li--second {
@@ -40,7 +39,6 @@
     background-image: url("../img/apple.svg");
   }
 }
-
 
 .contacts-form__label {
   display: flex;
