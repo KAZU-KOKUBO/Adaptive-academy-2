@@ -1,41 +1,56 @@
 .page-footer {
-  text-align: center;
+  display: flex;
+
+  flex-direction: column;
   align-items: center;
-  margin: 39px 0 0 0;
+  padding: 40px 20px 40px 20px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    margin: 0 25px 0 4px;
-    max-width: 1200px;
-    text-align: unset;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px 20px 40px 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 32px auto 0 auto;
-    width: 940px;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 59px 128px 75px 129px;
   }
 }
 
 .page-footer__social {
-  margin: 28px auto 0 auto;
+  margin: 0 -8px 28px 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: 50px 77px 51px;
-  width: 181px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 8px 0 0;
+    max-width: 250px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin: 29px auto 0 auto;
-    padding: 0;
-    list-style: none;
-    display: grid;
-    grid-template-columns: 47px 72px 36px;
-    width: 147px;
+    margin: 0 -15px 0 0;
+    max-width: 350px;
+    transform: translateY(10px);
   }
 }
 
-.social__link--facebook {
-  margin: 0 14px;
+.social__item {
+  margin-right: 8px;
+  margin-bottom: 8px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 6px;
+    margin-bottom: 6px;
+  }
+}
+
+.social__link {
+  display: flex;
 }
 
 .page-footer__logo-desktop {
@@ -53,24 +68,27 @@
 }
 
 .page-footer__copyright {
+  display: flex;
+  align-items: center;
   padding: 0;
-  margin: 17px 12px 0 0;
-
-  @media (min-width: $tablet-width) {
-    margin: 3px 7px 0 16px;
-  }
+  margin: 0;
 
   @media (min-width: $desktop-width) {
-    margin: 8px 10px 0 20px;
+    transform: translateY(10px);
   }
 }
 
-.copyright__link-img {
-  transform: translate(12px, 11px);
+.copyright__link {
+  display: flex;
+  margin-left: 15px;
 }
 
 .page-footer__logo-link {
-  margin: 9px 0 0 2px;
+  margin: 0 0 27px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 0;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;
