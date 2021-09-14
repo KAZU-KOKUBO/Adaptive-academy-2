@@ -90,10 +90,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 20px 20px 27px;
+    padding: 20px 20px 0 27px;
   }
 }
-
 
 .post__author {
   font-weight: 700;
@@ -133,12 +132,24 @@
   text-transform: uppercase;
   font-size: 12px;
   line-height: 24px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 6px 49px 0 0;
     display: flex;
     align-self: flex-end;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 105px;
+    top: 4px;
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -163,14 +174,27 @@
   text-transform: uppercase;
   font-size: 12px;
   line-height: 24px;
+  position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
+    left: -32px;
+    top: 2px;
+    width: 13px;
+    height: 12px;
     background-image: url("../img/heart.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 1px;
+      left: 228px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 1px;
+      left: 228px;
+    }
   }
 }
 
@@ -196,7 +220,7 @@
     max-width: 940px;
     margin: -10px auto 0 auto;
     background-color: $basic-wheat;
-    padding: 20px 10px 10px 27px;
+    padding: 20px 10px 22px 27px;
     position: relative;
   }
 }
@@ -250,6 +274,6 @@
 
 .post__item--grid {
   @media (min-width: $desktop-width) {
-    margin: 54px 0 0 0;
+    margin: 53px 0 0 0;
   }
 }
