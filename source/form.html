@@ -176,7 +176,9 @@
             ниже:</span></span>
         <span class="page-form__title">Пожалуйста, заполните форму ниже:</span>
       </p>
+
       <form class="page-form__form" method="POST" action="https://echo.htmlacademy.ru">
+        <div class="page-form__user__wrapper">
         <fieldset class="page-form__user user">
           <legend class="visually-hidden">
             Ваши: фамилия, имя, отчество
@@ -199,7 +201,9 @@
             </li>
           </ul>
         </fieldset>
+        </div>
 
+        <div class="page-form__achievements__wrapper">
         <section class="page-form__achievements">
           <h2 class="visually-hidden">Достижения в путешествиях</h2>
           <div class="page-form__achievements-wrapper">
@@ -212,7 +216,7 @@
                   <label class="achievements__label" for="first-item">
                     <input class="achievements__input visually-hidden" id="first-item" type="checkbox"
                       name="crazy achievements" value="first-achievements" checked />
-                    <span class="checkbox--span">Сделал селфи с акулой</span< /label>
+                    <span class="checkbox--span">Сделал селфи с акулой</span></label>
                 </li>
                 <li class="achievements__items">
                   <label class="achievements__label" for="second-item">
@@ -238,7 +242,7 @@
                       name="crazy achievements" value="fifth-achievements" checked />
                     <span class="checkbox--span">Удержал башню</span></label>
                 </li>
-                <li class="achievements__items">
+                <li class="achievements__items achievements__items--sixth">
                   <label class="achievements__label" for="sixth-item">
                     <input class="achievements__input visually-hidden" id="sixth-item" type="checkbox"
                       name="crazy achievements" value="sixth-achievements" />
@@ -248,7 +252,9 @@
             </fieldset>
           </div>
         </section>
+      </div>
 
+        <div class="page-form__contacts__wrapper">
         <fieldset class="page-form__contacts contacts-form">
           <legend class="visually-hidden">Ваши контакты</legend>
           <ul class="contacts-form__list">
@@ -264,30 +270,39 @@
             </li>
           </ul>
         </fieldset>
+      </div>
 
+        <div class="page-form__app__wrapper">
         <fieldset class="page-form__app app-form">
-          <legend class="app-form__title">
+          <legend class="app-form__title--small">
             С каким приложением путешествовали?
           </legend>
+         <p class="app-form__title">С каким приложением путешествовали?</p>
           <ul class="app-form__list">
             <li class="app-form__item">
-              <label class="app-form__label" for="pink-for-ios"><span class="radio--span">Pink для iOS</span></label>
+              <label class="app-form__label" for="pink-for-ios">
               <input class="app-form__input visually-hidden" id="pink-for-ios" type="radio" name="travel-apps" value="for-ios"
                 checked />
+                <span class="radio--span">Pink для iOS</span>
+              </label>
             </li>
             <li class="app-form__item">
-              <label class="app-form__label" for="pink-for-android"><span class="radio--span">на Android</span></label>
-              <input class="app-form__input visually-hidden" id="pink-for-android" type="radio" name="travel-apps"
-                value="for-android" />
+              <label class="app-form__label" for="pink-for-android">
+              <input class="app-form__input visually-hidden" id="pink-for-android" type="radio" name="travel-apps" value="for-android" />
+              <span class="radio--span">Pink на Android</span>
+              </label>
             </li>
-            <li class="app-form__item">
-              <label class="app-form__label" for="pink-for-windows"><span class="radio--span">Windows Phone</span></label>
-              <input class="app-form__input visually-hidden" id="pink-for-windows" type="radio" name="travel-apps"
-                value="for-windows" />
+            <li class="app-form__item app-form__item--windows">
+              <label class="app-form__label" for="pink-for-windows">
+              <input class="app-form__input visually-hidden" id="pink-for-windows" type="radio" name="travel-apps" value="for-windows" />
+              <span class="radio--span">Windows Phone</span>
+              </label>
             </li>
           </ul>
         </fieldset>
+      </div>
 
+        <div class="page-form__text__wrapper">
         <fieldset class="page-form__text description-form">
           <legend class="page-form__description">
             Опишите свои эмоции
@@ -301,6 +316,7 @@
             <span class="asterisk-color">*</span>— обязательные поля
           </p>
         </fieldset>
+      </div>
       </form>
     </section>
   </main>

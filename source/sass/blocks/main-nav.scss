@@ -67,6 +67,10 @@
 
 .main-nav__item--nav-height {
   height: 70px;
+
+  @media (max-width: $tablet-width) {
+    height: 110px;
+  }
 }
 
 .main-nav__toggle {
@@ -125,8 +129,12 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: 20px;
+  top: 9px;
+  right: 18px;
+
+  @media (min-width: $tablet-width) {
+    top: 29px;
+  }
 
   &::before,
   &::after {
