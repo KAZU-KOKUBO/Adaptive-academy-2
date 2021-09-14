@@ -124,6 +124,18 @@
   }
 }
 
+.price__field--tablet {
+  background-image: url("../img/yes.svg");
+  background-repeat: no-repeat;
+  background-position: 230px;
+
+  @media (min-width: $tablet-width) {
+    background-position: center;
+    background-image: url("../img/no.svg");
+  }
+}
+
+
 @media (min-width: $tablet-width) {
   .price__field--ok span,
   .price__field--cancel span {
