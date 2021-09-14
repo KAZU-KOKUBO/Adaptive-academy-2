@@ -19,10 +19,11 @@
     position: absolute;
     width: 52px;
     height: 52px;
-    background-color: $basic-pink;
+    background-color: $basic-gray;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    background-image: url("../img/phone-form.svg");
     right: 0;
     bottom: 0;
   }

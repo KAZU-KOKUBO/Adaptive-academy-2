@@ -12,17 +12,14 @@
   display: grid;
   grid-template-areas:
     "image"
-    "input"
+    "filter"
     "buttons";
   grid-template-columns: 100%;
   padding: 0;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    grid-template-areas:
-      "image input"
-      "image buttons";
-    grid-template-columns: 53% 1fr;
+    display: flex;
     margin: 47px auto 0;
     padding-bottom: 24px;
   }
@@ -63,7 +60,7 @@
   padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
-    margin: -247px 0 0 0;
+    margin: 0;
   }
 }
 
@@ -93,7 +90,6 @@
   }
 }
 
-
 .upload__form-button--cancel {
   padding: 15px 101px;
   border: 3px solid $darken-blue;
@@ -117,10 +113,9 @@
 }
 
 .upload__picture {
-  display: flex;
-  grid-area: input;
+  grid-area: filter;
   border: none;
-  margin: 27px auto 0 auto;
+  margin: 0 auto 0 auto;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -141,7 +136,6 @@
     display: block;
     position: static;
   }
-
 
   &::-webkit-slider-thumb {
     background-color: $basic-white;
@@ -167,8 +161,8 @@
   background-color: none;
 
   @media (min-width: $tablet-width) {
-    margin: 20px 0 0 0;
-    display: block;
+    margin: 0;
+    display: flex;
   }
 }
 
@@ -207,7 +201,7 @@
   margin: 83px 0 0 -10px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 17px 0 0 0;
   }
 }
 
