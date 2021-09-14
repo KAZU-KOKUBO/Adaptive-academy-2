@@ -110,12 +110,25 @@
     line-height: 30px;
     width: 240px;
     margin: 56px auto 0 auto;
+  }
+}
 
-    &::before {
-      content: "";
-      background-image: url("../img/shadow-phone.svg");
-      position: absolute;
-    }
+.advantages__image-wrapper {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 17px;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 0%,
+      #000000 49.8%,
+      rgba(0, 0, 0, 0) 93.23%
+    );
+    opacity: 0.3;
+    filter: blur(4px);
+    bottom: 279px;
+    transform: translateX(-50px);
   }
 }
 

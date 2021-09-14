@@ -4,10 +4,13 @@
   list-style: none;
   font-size: 18px;
   line-height: 30px;
-}
 
-@media (min-width: $desktop-width) {
-  .achievements__list {
+  @media (min-width: $tablet-width) {
+    margin: 1px 49px 0 49px;
+    padding: 31px 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -29,8 +32,8 @@
   margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    width: 374px;
-    padding: 0;
+    width: 436px;
+    padding: 0 15px;
   }
 }
 
@@ -101,14 +104,11 @@
   margin: 30px 0 0 0;
   border: none;
   width: 100vw;
-  margin: -54px 0 0 -20px;
-}
 
-@media (min-width: $tablet-width) {
-  .achievements {
+  @media (min-width: $tablet-width) {
     background-color: $basic-white;
-    border: 1px solid $basic-gray;
-    margin: 20px;
+    border: 2px solid $basic-gray;
+    margin: 57px 0 0 0;
     width: auto;
   }
 }

@@ -19,6 +19,10 @@
   margin: 0 0 0 0;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 0 0 57px;
+  }
 }
 
 .app-form__label input:checked ~ span::after {
@@ -62,6 +66,11 @@
   border-radius: 50%;
   border: 2px solid $basic-gray;
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    top: -8px;
+    left: 2px;
+  }
 }
 
 .radio--span::after {
@@ -71,6 +80,10 @@
   height: 18px;
   top: 3px;
   left: 2px;
+
+  @media (min-width: $tablet-width) {
+    left: 11px;
+  }
 }
 
 .app-form__label input:focus ~ span::before {
@@ -89,6 +102,10 @@
 
 .app-form__item--windows {
   padding-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 58px;
+  }
 }
 
 .app-form__title--small {
@@ -96,8 +113,6 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    order: 1;
-    width: 178px;
     font-size: 14px;
     line-height: 18px;
     color: $basic-pink;
@@ -105,5 +120,6 @@
     text-align: center;
     align-items: center;
     text-transform: uppercase;
+    padding: 0 30px;
   }
 }

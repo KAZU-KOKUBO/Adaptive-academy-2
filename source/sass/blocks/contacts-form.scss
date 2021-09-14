@@ -1,17 +1,31 @@
 .contacts-form {
   margin: 38px 0 0 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $basic-gray;
+    margin: 59px 0 0 0;
+  }
 }
 
 .contacts-form__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 36px 58px 0 58px;
+  }
 }
 
 .contacts-form__item {
   position: relative;
   margin: 0 0 18px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .contacts-form__item--tel {
@@ -19,14 +33,14 @@
     &::before {
       content: "";
       position: absolute;
-      width: 52px;
-      height: 52px;
+      width: 60px;
+      height: 60px;
       background-color: $basic-gray;
       background-repeat: no-repeat;
       background-position: center;
       background-image: url("../img/phone-form.svg");
-      right: 0;
-      bottom: 0;
+      right: 1px;
+      bottom: 53px;
     }
   }
 }
@@ -36,14 +50,14 @@
     &::before {
       content: "";
       position: absolute;
-      width: 52px;
-      height: 52px;
+      width: 60px;
+      height: 60px;
       background-color: $basic-gray;
       background-repeat: no-repeat;
       background-position: center;
       background-image: url("../img/mail-icon.svg");
-      right: 0;
-      bottom: 0;
+      right: 1px;
+      bottom: 53px;
     }
   }
 }
@@ -67,6 +81,11 @@
   line-height: 30px;
   margin: 0 0 5px 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin: 11px 0 11px 19px;
+  }
 }
 
 .contacts-form__input {
@@ -80,4 +99,19 @@
 
 .contacts-form__input::placeholder {
   color: $darken-blue;
+}
+
+.contacts-form__title {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    color: $basic-pink;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    padding: 0 30px;
+  }
 }

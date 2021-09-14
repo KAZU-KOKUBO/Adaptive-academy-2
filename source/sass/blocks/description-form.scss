@@ -6,8 +6,19 @@
   max-width: 818px;
   font-size: 18px;
   line-height: 30px;
-  color: #283645;
+  color: $darken-blue;
   padding: 13px 0 4px 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 33px auto 0 auto;
+    width: 500px;
+    max-width: 818px;
+    padding: 14px 20px 0 20px;
+    height: 194px;
+  }
 }
 
 .description-form__button {
@@ -21,6 +32,10 @@
   line-height: 30px;
   text-transform: uppercase;
   margin: 8px 0 0 -13px;
+
+  @media (min-width: $tablet-width) {
+    margin: 8px 10px 0 0;
+  }
 }
 
 .description-form__note {
@@ -31,4 +46,18 @@
   line-height: 30px;
   margin: 34px auto 0 auto;
   padding: 0 8px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 25px 0 0 127px;
+  }
+}
+
+.description-form_button__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 58px auto 0 auto;
+    padding-bottom: 48px;
+  }
 }

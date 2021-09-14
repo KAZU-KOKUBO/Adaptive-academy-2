@@ -27,10 +27,27 @@
   margin: 0;
   padding: 0;
   border: none;
+  grid-area: sandwich;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.page-form__text__wrapper {
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
 }
 
 .page-form__text {
   border: none;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $basic-gray;
+    margin: 57px 0 0 0;
+    padding-bottom: 50px;
+  }
 }
 
 .page-form__info {
@@ -50,7 +67,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 656px;
+    width: 800px;
   }
 }
 
@@ -73,10 +90,28 @@
   padding: 38px 12px 12px 0;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 38px;
+  }
+}
+
+.page-form__contacts__wrapper {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
 }
 
 .page-form__contacts {
   border: none;
+}
+
+.page-form__app__wrapper {
+  grid-area: burger;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .page-form__app {
@@ -90,11 +125,28 @@
     background-color: $basic-white;
     border: 1px solid $basic-gray;
     width: auto;
+    margin: 42px 0 0 0;
   }
 }
 
 .page-form__achievements {
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
+  }
+}
+
+.page-form__achievements__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.page-form__user--app--user {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

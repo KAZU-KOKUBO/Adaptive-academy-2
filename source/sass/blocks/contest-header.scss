@@ -28,4 +28,8 @@
   @media (min-width: $tablet-width) {
     padding: 66px 0 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 46px 0 39px;
+  }
 }
