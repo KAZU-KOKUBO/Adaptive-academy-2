@@ -25,10 +25,11 @@
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url("../img/circle.svg");
 }
 
 .app-form__label input:disabled ~ span::after {
-  background-image: url("../img/bird.svg");
+  background-image: url("../img/circle.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -11,9 +11,10 @@
 
 .contacts-form__item {
   margin: 0 20px 0 20px;
-
   position: relative;
+}
 
+.contacts-form__item--tel {
   &::before {
     content: "";
     position: absolute;
@@ -21,9 +22,23 @@
     height: 52px;
     background-color: $basic-gray;
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center;
     background-image: url("../img/phone-form.svg");
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.contacts-form--mail {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    background-color: $basic-gray;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/mail-icon.svg");
     right: 0;
     bottom: 0;
   }

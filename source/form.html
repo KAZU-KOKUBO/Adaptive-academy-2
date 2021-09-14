@@ -252,12 +252,12 @@
         <fieldset class="page-form__contacts contacts-form">
           <legend class="visually-hidden">Ваши контакты</legend>
           <ul class="contacts-form__list">
-            <li class="contacts-form__item">
+            <li class="contacts-form__item contacts-form__item--tel">
               <label class="contacts-form__label" for="user-phone">Номер телефона</label>
               <input class="contacts-form__input" id="user-phone" type="tel" name="phone"
                 placeholder="Номер, пожалуйста" />
             </li>
-            <li class="contacts-form__item">
+            <li class="contacts-form__item contacts-form--mail">
               <label class="contacts-form__label" for="user-email">Адрес почты</label>
               <input class="contacts-form__input" id="user-email" type="email" name="email"
                 placeholder="Введите почту *" />
@@ -272,17 +272,17 @@
           <ul class="app-form__list">
             <li class="app-form__item">
               <label class="app-form__label" for="pink-for-ios"><span class="radio--span">Pink для iOS</span></label>
-              <input class="app-form__input" id="pink-for-ios" type="radio" name="travel-apps" value="for-ios"
+              <input class="app-form__input visually-hidden" id="pink-for-ios" type="radio" name="travel-apps" value="for-ios"
                 checked />
             </li>
             <li class="app-form__item">
               <label class="app-form__label" for="pink-for-android"><span class="radio--span">на Android</span></label>
-              <input class="app-form__input" id="pink-for-android" type="radio" name="travel-apps"
+              <input class="app-form__input visually-hidden" id="pink-for-android" type="radio" name="travel-apps"
                 value="for-android" />
             </li>
             <li class="app-form__item">
               <label class="app-form__label" for="pink-for-windows"><span class="radio--span">Windows Phone</span></label>
-              <input class="app-form__input" id="pink-for-windows" type="radio" name="travel-apps"
+              <input class="app-form__input visually-hidden" id="pink-for-windows" type="radio" name="travel-apps"
                 value="for-windows" />
             </li>
           </ul>
