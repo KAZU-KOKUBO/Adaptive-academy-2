@@ -68,7 +68,7 @@
 .main-nav__item--nav-height {
   height: 70px;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
     height: 110px;
   }
 }

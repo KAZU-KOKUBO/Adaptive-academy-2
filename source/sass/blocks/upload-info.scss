@@ -52,7 +52,6 @@
 .upload__form-button {
   text-align: center;
   align-items: center;
-  grid-area: 3;
 }
 
 .upload__form-buttons {
@@ -74,6 +73,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -90,6 +90,15 @@
   }
 }
 
+.upload__form-button--download:hover {
+  background-color: $basic-pink;
+  color: $basic-white;
+}
+
+.upload__form-button--download:active .upload__form-button--link {
+  opacity: 0.3;
+}
+
 .upload__form-button--cancel {
   padding: 15px 101px;
   border: 3px solid $darken-blue;
@@ -100,6 +109,15 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+}
+
+.upload__form-button--cancel:hover {
+  opacity: 0.3;
+}
+
+.upload__form-button--cancel:active {
+  background-color: $darken-blue;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .upload__picture-img {
@@ -204,4 +222,3 @@
     margin: 17px 0 0 0;
   }
 }
-
