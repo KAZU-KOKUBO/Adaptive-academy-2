@@ -191,3 +191,20 @@
 .main-nav--nojs .main-nav__toggle {
   display: none;
 }
+
+.main-nav--opened .main-nav__toggle:hover {
+  &::before {
+    background-color: $basic-pink;
+  }
+
+  &::after {
+    background-color: $basic-pink;
+  }
+}
+
+.main-nav--closed .main-nav__toggle:hover {
+  &::before {
+    background-color: $basic-pink;
+    box-shadow: 0 8px 0 0 ($basic-pink), 0 16px 0 0 ($basic-pink);
+  }
+}

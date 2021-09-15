@@ -8,6 +8,7 @@
   line-height: 30px;
   color: $darken-blue;
   padding: 13px 0 4px 20px;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -18,6 +19,12 @@
     max-width: 818px;
     padding: 14px 20px 0 20px;
     height: 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 816px;
+    height: 124px;
+    margin: 29px auto -3px;
   }
 }
 
@@ -39,7 +46,26 @@
     max-width: 300px;
     padding: 13px 48px 16px 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 8px 10px 0 0;
+    max-width: 300px;
+    padding: 14px 45px 15px 55px;
+  }
 }
+
+.description-form__button:hover {
+  background-color: $darken-green;
+}
+
+.description-form__button:active {
+  background-color: $darken-green;
+}
+
+.description-form__button:disabled {
+  background-color: $basic-gray;
+}
+
 
 .description-form__note {
   text-align: center;
@@ -54,6 +80,25 @@
     padding: 0;
     margin: 25px 0 0 127px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 25px 0 0 155px;
+    display: none;
+  }
+}
+
+.description-form__note--mobile {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.description-form__note--big {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .description-form_button__wrapper {
@@ -62,5 +107,10 @@
     grid-template-columns: 1fr 1fr;
     margin: 58px auto 0 auto;
     padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 57px auto 0 auto;
+    padding-bottom: 13px;
   }
 }
