@@ -25,16 +25,18 @@
   background: $basic-green;
   border: 2px solid $basic-green;
   border-radius: 5px;
-  padding: 13px 45px 16px;
+  padding: 13px 48px 16px 54px;
   color: $basic-white;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  margin: 8px 0 0 -13px;
+  margin: 8px auto 0 auto;
+  display: flex;
 
   @media (min-width: $tablet-width) {
-    margin: 8px 10px 0 0;
+    margin: 8px 10px 0 10px;
+    max-width: 300px;
   }
 }
 
@@ -45,7 +47,7 @@
   font-size: 14px;
   line-height: 30px;
   margin: 34px auto 0 auto;
-  padding: 0 8px 0 0;
+  padding: 0 8px 14px 8px;
 
   @media (min-width: $tablet-width) {
     padding: 0;

@@ -44,6 +44,8 @@
 
 .page-form__text {
   border: none;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     border: 2px solid $basic-gray;
