@@ -1,20 +1,71 @@
 .description-form__text {
-  border: 2px solid $basic-gray;
+  border: 2px solid #e5e5e5;
   border-radius: 1px;
-  margin: 0 0 30px 0;
+  margin: 0 0 30px -13px;
+  width: 280px;
+  max-width: 818px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $darken-blue;
+  padding: 13px 0 4px 20px;
+  resize: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 33px auto 0 auto;
+    width: 500px;
+    max-width: 818px;
+    padding: 14px 20px 0 20px;
+    height: 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 816px;
+    height: 124px;
+    margin: 29px auto -3px;
+  }
 }
 
 .description-form__button {
   background: $basic-green;
   border: 2px solid $basic-green;
   border-radius: 5px;
-  padding: 23px 45px 23px 45px;
+  padding: 15px 45px 15px 44px;
   color: $basic-white;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 8px auto 0 auto;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    margin: 8px 10px 0 10px;
+    max-width: 300px;
+    padding: 13px 48px 16px 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 8px 10px 0 0;
+    max-width: 300px;
+    padding: 14px 45px 15px 55px;
+  }
 }
+
+.description-form__button:hover {
+  background-color: $darken-green;
+}
+
+.description-form__button:active {
+  background-color: $darken-green;
+}
+
+.description-form__button:disabled {
+  background-color: $basic-gray;
+}
+
 
 .description-form__note {
   text-align: center;
@@ -22,4 +73,44 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
+  margin: 34px auto 0 auto;
+  padding: 0 8px 14px 8px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 25px 0 0 127px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 25px 0 0 155px;
+    display: none;
+  }
+}
+
+.description-form__note--mobile {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.description-form__note--big {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.description-form_button__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 58px auto 0 auto;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 57px auto 0 auto;
+    padding-bottom: 13px;
+  }
 }

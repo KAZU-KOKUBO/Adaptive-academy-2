@@ -1,20 +1,55 @@
 .achievements__list {
-  margin: 0;
-  padding: 0 0 20px 0;
+  margin: 0 11px 12px 11px;
+  padding: 28px 0 20px;
   list-style: none;
   font-size: 18px;
   line-height: 30px;
-}
 
-@media (min-width: $desktop-width) {
-  .achievements__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  @media (min-width: $tablet-width) {
+    margin: 1px 49px 0 49px;
+    padding: 31px 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
 .achievements__items {
-  margin: 69px 0 0 0;
+  margin: 0 0 52px 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 53px 0;
+  }
+
+  &:nth-child(1) {
+    order: 1;
+    width: 314px;
+  }
+
+  &:nth-child(2) {
+    order: 4;
+    width: 315px;
+  }
+
+  &:nth-child(3) {
+    order: 2;
+    width: 294px;
+  }
+
+  &:nth-child(4) {
+    order: 5;
+    width: 294px;
+  }
+
+  &:nth-child(5) {
+    order: 3;
+  }
+
+  &:nth-child(6) {
+    order: 6;
+  }
 }
 
 .achievements__title {
@@ -24,16 +59,16 @@
   text-transform: uppercase;
   text-align: center;
   align-items: center;
-  padding: 46px 0 0 0;
+  padding: 31px 0 0 0;
   width: 218px;
-}
+  margin-bottom: 10px;
 
-@media (min-width: $tablet-width) {
-  .achievements__title {
-    width: 374px;
-    padding: 0;
+  @media (min-width: $tablet-width) {
+    width: 436px;
+    padding: 0 15px;
   }
 }
+
 
 .achievements__label input:checked ~ span::after {
   background-image: url("../img/bird.svg");
@@ -60,7 +95,7 @@
 
 .checkbox--span {
   position: relative;
-  padding-left: 62px;
+  padding-left: 58px;
   font-size: 18px;
   line-height: 30px;
   cursor: pointer;
@@ -69,10 +104,10 @@
 .checkbox--span::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 35px;
-  height: 35px;
+  top: -7px;
+  left: -2px;
+  width: 39px;
+  height: 39px;
   border-radius: 15%;
   border: 2px solid $basic-gray;
   background-color: $basic-white;
@@ -83,30 +118,36 @@
   position: absolute;
   width: 23px;
   height: 18px;
-  top: 8px;
+  top: 3px;
   left: 7px;
 }
 
 .achievements__label input:focus ~ span::before {
   content: "";
-  top: 0;
-  left: 0;
+  top: -7px;
+  left: -2px;
   width: 35px;
   height: 35px;
   border-radius: 15%;
-  outline: 2px solid $basic-black;
+  outline: 2px solid $basic-pink;
 }
 
 .achievements {
-  background-color: $basic-wheat;
   margin: 30px 0 0 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    border: 2px solid $basic-gray;
+    margin: 57px 0 0 0;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 239px;
+  }
 }
 
-@media (min-width: $tablet-width) {
-  .achievements {
-    background-color: $basic-white;
-    border: 1px solid $basic-gray;
-    margin: 20px;
-  }
+.achievements__items--sixth {
+  margin-bottom: 0;
 }

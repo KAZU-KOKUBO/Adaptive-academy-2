@@ -1,40 +1,16 @@
-.upload__info {
-  text-align: center;
-  align-items: center;
-  background-color: $basic-white;
-  margin: 0;
-  padding: 0;
-}
+.upload {
+  padding: 20px 0 41px 0;
+  background-color: $color-white-smoke;
+  margin: 42px 0 0 0;
 
-.upload__info--small {
-  margin: 49px 0 0 0;
-}
+  @media (min-width: $tablet-width) {
+    padding: 56px 0 53px 0;
+    margin: 71px 0 0 0;
+  }
 
-.upload__info--long {
-  padding-bottom: 52px;
-}
-
-.upload__form-button {
-  text-align: center;
-  align-items: center;
-}
-
-.upload__form-button--download {
-  padding: 21px 90px 21px 90px;
-  border: 3px solid $basic-pink;
-  box-sizing: border-box;
-  border-radius: 30px;
-  margin: 38px 0 0 0;
-}
-
-.upload__form-button--cancel {
-  padding: 21px 99px 21px 99px;
-  border: 3px solid $basic-pink;
-  box-sizing: border-box;
-  border-radius: 30px;
-  margin: 12px 0 41px 0;
-}
-
-.upload__picture-img {
-  margin: 20px;
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    margin: 68px auto 43px;
+    padding: 0 0 9px 0;
+  }
 }

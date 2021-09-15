@@ -1,3 +1,12 @@
 .asterisk-color {
   color: $basic-pink;
 }
+
+.asterisk-color--second {
+  display: none;
+  color: $basic-pink;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

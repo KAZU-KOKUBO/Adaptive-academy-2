@@ -7,20 +7,29 @@
   text-align: center;
   align-items: center;
   width: 290px;
-  margin: 0 auto;
-}
+  margin: 0 auto 44px auto;
 
-@media (min-width: $tablet-width) {
-  .contest-header {
+  @media (min-width: $tablet-width) {
     width: 620px;
     font-size: 50px;
     line-height: 68px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .contest-header {
+  @media (min-width: $desktop-width) {
     width: 747px;
     margin: 13px auto 50px auto;
+  }
+}
+
+.contest-header__info {
+  margin: 0;
+  padding: 28px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 0 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 46px 0 39px;
   }
 }

@@ -1,0 +1,56 @@
+.controls__button {
+  width: 12px;
+  height: 12px;
+  background-color: $basic-white;
+  border-radius: 50%;
+  padding: 0;
+  position: relative;
+  border: none;
+  margin: 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: rgba($darken-blue, 0.2);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+}
+
+.controls__button:hover {
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $darken-blue;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+}
+
+.controls__button--current {
+  width: 12px;
+  height: 12px;
+  background-color: $darken-blue;
+  border-radius: 50%;
+  padding: 0;
+  position: relative;
+  border: none;
+  margin: 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $basic-white;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+}
