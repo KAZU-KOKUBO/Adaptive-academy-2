@@ -212,9 +212,10 @@
   @media (min-width: $desktop-width) {
     order: -1;
     overflow: hidden;
-    position: static;
+    position: relative;
     bottom: 0;
     right: 0;
+    width: 100%;
 
     &::before {
       content: "";
@@ -229,7 +230,7 @@
       );
       opacity: 0.3;
       filter: blur(4px);
-      bottom: 279px;
+      bottom: -10px;
       transform: translateX(-50px);
     }
   }
@@ -395,4 +396,14 @@
     line-height: 30px;
     margin: 30px 0 0 0;
   }
+}
+
+.advantages__timer-link:hover {
+  color: $darken-blue;
+  text-decoration: underline;
+}
+
+.advantages__timer-link:active {
+  opacity: 0.3;
+  text-decoration: none;
 }

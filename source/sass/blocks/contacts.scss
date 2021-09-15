@@ -131,12 +131,14 @@
   border: none;
 }
 
-.contacts__mail:hover {
+.contacts__mail:hover,
+.contacts__phone:hover {
   color: $darken-blue;
   text-decoration: underline;
 }
 
-.contacts__mail:active {
+.contacts__mail:active,
+.contacts__phone:active {
   color: $darken-blue;
   opacity: 0.3;
   text-decoration: none;
