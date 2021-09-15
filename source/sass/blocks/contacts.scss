@@ -125,6 +125,12 @@
   }
 }
 
+
+.contacts__map iframe {
+  width: 100%;
+  border: none;
+}
+
 .contacts__mail:hover {
   color: $darken-blue;
   text-decoration: underline;
