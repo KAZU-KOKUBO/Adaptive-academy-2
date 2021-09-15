@@ -4,6 +4,7 @@
   list-style: none;
   padding: 0;
   margin: 24px 0 0 0;
+  transform: translateX(5px);
 
   @media (min-width: $tablet-width) {
     width: 44%;
@@ -12,6 +13,7 @@
     margin-left: auto;
     text-align: left;
     flex-direction: column;
+    transform: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -93,7 +95,7 @@
     @media (min-width: $desktop-width) {
       transform: translateY(-25%);
       height: 900px;
-      clip-path: polygon(0 32%, 290% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 32%, 298% 0, 100% 100%, 0 100%);
     }
   }
 }

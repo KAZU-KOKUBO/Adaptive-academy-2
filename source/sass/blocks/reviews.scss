@@ -31,6 +31,8 @@
   @media (min-width: $tablet-width) {
     order: 1;
     margin: 35px 0 0 0;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,6 +85,10 @@
   height: 20px;
   margin: 27px 0 0 0;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin: 32px 0 0 0;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
