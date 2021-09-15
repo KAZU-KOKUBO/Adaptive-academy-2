@@ -134,13 +134,29 @@
   line-height: 24px;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 6px 49px 0 0;
+    display: flex;
+    align-self: flex-end;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 6px;
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
+
     @media (min-width: $tablet-width) {
-      padding: 0;
-      margin: 18px 49px 0 0;
-      display: flex;
-      align-self: flex-end;
+      top: 4px;
+      left: 105px;
     }
   }
+}
 
 .post__likes__text {
   padding: 0;
@@ -212,7 +228,7 @@
     padding: 20px 10px 22px 27px;
     position: relative;
   }
-
+}
 
 .panorama__picture--mobile {
   width: 100%;
@@ -262,7 +278,7 @@
 }
 
 .post__item--grid {
-
   @media (min-width: $desktop-width) {
     margin: 53px 0 0 0;
   }
+}
