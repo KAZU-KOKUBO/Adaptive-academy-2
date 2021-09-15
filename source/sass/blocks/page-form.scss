@@ -146,6 +146,10 @@
   @media (min-width: $tablet-width) {
     order: 4;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+  }
 }
 
 .page-form__user--app--user {
