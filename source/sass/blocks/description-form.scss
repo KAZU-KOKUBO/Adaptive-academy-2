@@ -25,7 +25,7 @@
   background: $basic-green;
   border: 2px solid $basic-green;
   border-radius: 5px;
-  padding: 13px 48px 16px 54px;
+  padding: 15px 45px 15px 44px;
   color: $basic-white;
   font-weight: 700;
   font-size: 18px;
@@ -37,6 +37,7 @@
   @media (min-width: $tablet-width) {
     margin: 8px 10px 0 10px;
     max-width: 300px;
+    padding: 13px 48px 16px 54px;
   }
 }
 
