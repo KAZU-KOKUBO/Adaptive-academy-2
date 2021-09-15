@@ -5,10 +5,12 @@
 }
 
 .reviews__list {
-  padding: 0;
-  margin: 0;
+  padding: 28px 0 0 0;
   text-align: center;
   align-items: center;
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
 }
 
 .reviews__author {
@@ -16,6 +18,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .reviews__author-name {
@@ -23,9 +26,18 @@
   line-height: 30px;
   font-weight: bold;
   color: $basic-black;
+  font-style: normal;
 
   @media (min-width: $tablet-width) {
     order: 1;
+    margin: 35px 0 0 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 
@@ -38,24 +50,97 @@
     order: 1;
     display: block;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 3px 0 0 0;
+  }
 }
 
 .reviews__text {
   display: flex;
+  width: 283px;
+  margin: 14px -25px 0 -22px;
+
 
   @media (min-width: $tablet-width) {
-    width: 500px;
-    margin: 20px auto;
+    width: 620px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    margin-top: 35px;
   }
 }
 
 .reviews__toggles {
   align-items: center;
   text-align: center;
-}
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  margin: 27px 0 0 0;
+  cursor: pointer;
 
-@media (min-width: $desktop-width) {
-  .reviews__toggles {
+  @media (min-width: $tablet-width) {
+    margin: 32px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
+
+.reviews__button {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.reviews__button svg {
+  fill: $darken-blue;
+  opacity: 0.3;
+}
+
+.reviews__button svg:hover {
+  fill: $darken-blue;
+  opacity: 0.6;
+}
+
+.reviews__button svg:active {
+  fill: $darken-blue;
+  opacity: 0.2;
+}
+
+.reviews__dots {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 44px auto 0 auto;
+  }
+}
+
+
+.reviews__button--left {
+  position: absolute;
+  top: 212px;
+  left: 124px;
+}
+
+
+.reviews__button--right {
+  position: absolute;
+  top: 212px;
+  right: 124px;
+}
+

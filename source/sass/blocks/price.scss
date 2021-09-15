@@ -1,29 +1,111 @@
 .price {
   background-color: $basic-wheat;
+  max-width: 100vw;
+  overflow: hidden;
+  clip-path: polygon(0 10%, 100% 6%, 100% 100%, 0% 100%);
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    clip-path: polygon(0 13%, 127% 0, 100% 100%, 0 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    clip-path: polygon(0 22%, 121% 0, 100% 100%, 0 100%);
+  }
+}
+
+.price__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 134px 0 52px 0;
+
+  @media (min-width: $tablet-width) {
+    transform: none;
+    padding: 106px 0 69px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 175px 0 99px 0;
+  }
 }
 
 .price__value {
+  min-width: 277px;
   background-color: $darken-blue;
   color: $basic-white;
-  width: 234px;
+  text-transform: uppercase;
+  padding: 10px 0 29px 3px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 152px;
+    padding: 12px 0 10px 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 234px;
+    height: 97px;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 6px 0 12px 3px;
+  }
 }
 
 .price__value--empty {
   background-color: inherit;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .price__field {
   color: $darken-blue;
   background-color: $basic-white;
+  padding: 13px 0 15px 22px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+    padding: 0 0 0 14px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 13px 2px 15px 22px;
+  }
 }
 
 .price__value p {
   font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  margin: -3px 0 0 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    margin: 0;
+  }
 }
 
 .price__toggles {
   align-items: center;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  padding: 45px 0 0 43px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -35,30 +117,57 @@
 .price__field--ok {
   background-image: url("../img/yes.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 230px;
+
+  @media (min-width: $tablet-width) {
+    background-position: center;
+  }
+}
+
+.price__field--tablet {
+  background-image: url("../img/yes.svg");
+  background-repeat: no-repeat;
+  background-position: 230px;
+
+  @media (min-width: $tablet-width) {
+    background-position: center;
+    background-image: url("../img/no.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price__field--ok span,
+  .price__field--cancel span {
+    display: none;
+  }
 }
 
 .price__field--cancel {
   background-image: url("../img/no.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 230px;
+  padding: 15px 0 15px 20px;
+
+  @media (min-width: $tablet-width) {
+    background-position: center;
+  }
+}
+
+.price__field--change {
+  display: contents;
 }
 
 .price__table {
   width: 100%;
-}
 
-@media (min-width: $tablet-width) {
-  .price__table {
-    width: 80%;
+  @media (min-width: $tablet-width) {
+    width: 100%;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .price__table {
-    width: 75%;
-    margin: 0 auto;
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 960px;
   }
 }
 
@@ -68,4 +177,30 @@
 
 .price__value__title {
   margin: 0;
+}
+
+.price__field--none {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 0;
+  }
+}
+
+.price__value--hit {
+  background-image: url("../img/ribbon.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/ribon.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/ribbon.svg");
+  }
 }

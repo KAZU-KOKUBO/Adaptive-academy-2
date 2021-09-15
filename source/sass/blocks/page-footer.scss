@@ -1,33 +1,78 @@
 .page-footer {
-  text-align: center;
-  align-items: center;
-  margin: 40px 0 0 0;
-}
+  display: flex;
 
-@media (min-width: $tablet-width) {
-  .page-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: column;
+  align-items: center;
+  padding: 42px 20px 47px 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px 20px 40px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 45px 128px 75px 129px;
   }
 }
 
 .page-footer__social {
-  margin: 0;
+  margin: 0 -8px 28px 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 8px 0 0;
+    max-width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 -15px 0 0;
+    max-width: 350px;
+    transform: translateY(10px);
+  }
 }
 
-.social__link--facebook {
-  margin: 0 14px;
+.social__item {
+  margin-right: 8px;
+  margin-bottom: 8px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 6px;
+    margin-bottom: 6px;
+  }
+}
+
+.social__link {
+  display: flex;
+}
+
+.social__link circle {
+  stroke: $darken-blue;
+  fill: $basic-white;
+  opacity: 0.1;
+}
+
+.social__link:hover circle {
+  opacity: 1;
+}
+
+.social__link:active svg {
+  opacity: 0.1;
 }
 
 .page-footer__logo-desktop {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -36,8 +81,63 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .page-footer__logo-desktop {
-    display: block;
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  transform: translateY(3px);
+
+  @media (min-width: $desktop-width) {
+    transform: translateY(10px);
+  }
+}
+
+.copyright__link {
+  display: flex;
+  margin-left: 15px;
+}
+
+.copyright__link svg {
+  fill: $basic-pink;
+}
+
+.copyright__link:hover svg {
+  fill: $darken-blue;
+}
+
+.copyright__link:active svg {
+  opacity: 0.3;
+}
+
+.page-footer__logo-link {
+  margin: 0 0 27px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.page-footer__logo-link svg {
+  fill: $darken-blue;
+}
+
+.page-footer__logo-link:hover svg {
+  fill: $basic-pink;
+}
+
+.page-footer__logo-link:active svg {
+  opacity: 0.3;
+}
+
+
+.copyright__text {
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
   }
 }
