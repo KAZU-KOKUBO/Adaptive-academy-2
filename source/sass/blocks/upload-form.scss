@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 80px 57px 80px;
+    padding: 55px 0 47px 80px;
     max-width: 100%;
   }
 }
@@ -195,7 +195,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    transform: translateY(0);
+    transform: translateY(-6px);
 
     &::before {
       width: 410px;
@@ -258,7 +258,7 @@
 
   @media (min-width: $tablet-width) {
     top: 7px;
-    left: 95px;
+    left: 96px;
     position: static;
     flex-grow: 1;
   }
@@ -346,5 +346,11 @@
     background-color: rgba($darken-blue, 0.3);
     border-color: rgba($darken-blue, 0.3);
     color: rgba($basic-white, 0.3);
+  }
+}
+
+.upload__picture-img {
+  @media (min-width: $tablet-width) {
+    width: 100%;
   }
 }
