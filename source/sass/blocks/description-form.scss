@@ -42,9 +42,9 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
-    margin: 8px 10px 0 10px;
+    margin: 8px 0 0 0;
     max-width: 300px;
-    padding: 13px 48px 16px 54px;
+    padding: 13px 47px 16px 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,6 +66,9 @@
   background-color: $basic-gray;
 }
 
+.description-form_button__wrapper:active .load-block-download {
+  opacity: 0.3;
+}
 
 .description-form__note {
   text-align: center;
