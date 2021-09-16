@@ -56,6 +56,10 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    padding-left: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-left: 77px;
   }
 }
@@ -82,6 +86,10 @@
   }
 }
 
+.app-form__label input:hover ~ span::before {
+  border: 2px solid $darken-blue;
+}
+
 .radio--span::after {
   content: "";
   position: absolute;
@@ -101,12 +109,12 @@
 
 .app-form__label input:focus ~ span::before {
   content: "";
-  top: -9px;
-  left: 7px;
-  width: 35px;
-  height: 35px;
+  top: -8px;
+  left: -7px;
+  width: 41px;
+  height: 41px;
   border-radius: 50%;
-  outline: 2px solid $basic-pink;
+  border: 2px solid $basic-pink;
 
   @media (min-width: $tablet-width) {
     top: -8px;
@@ -115,8 +123,12 @@
 
   @media (min-width: $desktop-width) {
     top: -8px;
-    left: 13px;
+    left: 16px;
   }
+}
+
+.app-form__label input:active ~ span::before {
+  border: 2px solid $basic-pink;
 }
 
 .app-form__item {
