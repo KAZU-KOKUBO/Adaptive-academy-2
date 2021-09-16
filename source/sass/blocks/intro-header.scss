@@ -9,7 +9,7 @@
   position: relative;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/background/back-mobile@2x.png");
+    background-image: url("../img/back-mobile@2x.png");
   }
 
   @media (min-width: $tablet-width) {
@@ -17,10 +17,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
-  }
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/background/back-tablet@2x.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -28,10 +28,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
-  }
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/background/back-desktop@2x.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.png");
+    }
   }
 }
 

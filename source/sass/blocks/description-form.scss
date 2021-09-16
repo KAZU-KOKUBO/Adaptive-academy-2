@@ -66,6 +66,9 @@
   background-color: $basic-gray;
 }
 
+.description-form_button__wrapper:active .load-block-download {
+  opacity: 0.3;
+}
 
 .description-form__note {
   text-align: center;
