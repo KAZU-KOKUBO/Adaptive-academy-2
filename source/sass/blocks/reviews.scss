@@ -63,7 +63,6 @@
   width: 283px;
   margin: 14px -25px 0 -22px;
 
-
   @media (min-width: $tablet-width) {
     width: 620px;
     font-size: 18px;
@@ -130,17 +129,14 @@
   }
 }
 
-
 .reviews__button--left {
   position: absolute;
   top: 212px;
   left: 124px;
 }
 
-
 .reviews__button--right {
   position: absolute;
   top: 212px;
   right: 124px;
 }
-
